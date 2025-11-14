@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Group-2-2-A-Puzzle-Game.sln"
+    "dotnet.defaultSolution": "Group-2-2-A-Puzzle-Game-final.sln"
 }
