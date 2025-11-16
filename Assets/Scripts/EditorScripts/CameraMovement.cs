@@ -42,12 +42,40 @@ public class CameraMovement : MonoBehaviour
         
         Vector3 move = (right * xAxis + forward * zAxis) * speed * Time.deltaTime;
         transform.Translate(move, Space.World);
+
+        if (transform.position.x < -20f) {
+            transform.position = new Vector3(-20f, transform.position.y, transform.position.z);
+        }
+
+        if (transform.position.x > 20f) {
+            transform.position = new Vector3(20f, transform.position.y, transform.position.z);
+        }
+
+        if (transform.position.z < -20f) {
+            transform.position = new Vector3(transform.position.x, transform.position.y, -20f);
+        }
+
+        if (transform.position.z > 20f) {
+            transform.position = new Vector3(transform.position.x, transform.position.y, 20f);
+        }
     }
 
     void Zoom() {
         float scroll = Input.GetAxis("Mouse ScrollWheel");
         Vector3 move = transform.forward * scroll * zoomSpeed * 10f * Time.deltaTime;
+
+        Vector3 newPosition = transform.position + move;
+
+        if (newPosition.y < 5f) {
+            transform.position = new Vector3(transform.position.x, 5f, transform.position.z);
+           return;
+        } else if (newPosition.y > 20f) {
+            transform.position = new Vector3(transform.position.x, 20f, transform.position.z);
+            return;
+        }
+        
         transform.Translate(move, Space.World);
+
     }
 
     void Rotation() {

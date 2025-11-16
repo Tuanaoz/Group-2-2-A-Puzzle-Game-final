@@ -29,6 +29,9 @@ public class GridManager : MonoBehaviour
     public bool levelComplete = false;
     public SaveLevelUI saveLevelUI;
     public CameraMovement mainCameraMovement;
+    private Material originalMaterial;
+    private Color originalColor;
+    private GameObject currentPrefab;
 
     public Vector3 GridToWorld(Vector3Int gridPos)
     {
@@ -124,6 +127,20 @@ public class GridManager : MonoBehaviour
                     Scene currentScene = SceneManager.GetActiveScene();
                     if (hit.collider.gameObject.tag == "Rotatable" || hit.collider.gameObject.tag == "Direction" || hit.collider.gameObject.tag == "Goal" || ((hit.collider.gameObject.tag == "Player" || hit.collider.gameObject.tag == "Enemy") && currentScene.name == "LevelEditor")) {
                         UI = true;
+                        currentPrefab = hit.collider.gameObject;
+                        if (currentPrefab.GetComponent<Renderer>() == null) {
+                            for (int i = 0; i < currentPrefab.transform.childCount; i++) {
+                                if (currentPrefab.transform.GetChild(i).GetComponent<Renderer>() != null) {
+                                    originalMaterial = new Material(currentPrefab.transform.GetChild(i).GetComponent<Renderer>().material);
+                                    originalColor = originalMaterial.color;
+                                    updatePrefabColor(currentPrefab.transform.GetChild(i).gameObject, Color.blue);
+                                }
+                            }
+                        } else {
+                            originalMaterial = new Material(currentPrefab.GetComponent<Renderer>().material);
+                            originalColor = originalMaterial.color;
+                            updatePrefabColor(currentPrefab, Color.blue);
+                        }
                         prefabOptionsMenu.OpenMenu(hit.collider.gameObject);
                     } else if (hit.collider.gameObject.tag == "Expand") {
                         GameObject parentObject = hit.collider.gameObject.transform.parent.gameObject;
@@ -154,6 +171,15 @@ public class GridManager : MonoBehaviour
         } else if (UI) {
             if (Input.GetMouseButtonDown(1) || (Input.GetMouseButtonDown(0) && !IsPointerOverUIObject())) {
                 UI = false;
+                if (currentPrefab.GetComponent<Renderer>() == null) {
+                    for (int i = 0; i < currentPrefab.transform.childCount; i++) {
+                        if (currentPrefab.transform.GetChild(i).GetComponent<Renderer>() != null) {
+                            updatePrefabColor(currentPrefab.transform.GetChild(i).gameObject, originalColor);
+                        }
+                    }
+                } else {
+                    updatePrefabColor(currentPrefab, originalColor);
+                }
                 prefabOptionsMenu.CloseMenu();
             }
         }
@@ -214,6 +240,14 @@ public class GridManager : MonoBehaviour
 
     void updateGhostColor(Color color) {
         Renderer[] renderers = ghostObject.GetComponentsInChildren<Renderer>();
+        foreach (Renderer render in renderers) {
+            Material material = render.material;
+            material.color = color;
+        }
+    }
+
+    void updatePrefabColor(GameObject obj, Color color) {
+        Renderer[] renderers = obj.GetComponentsInChildren<Renderer>();
         foreach (Renderer render in renderers) {
             Material material = render.material;
             material.color = color;
