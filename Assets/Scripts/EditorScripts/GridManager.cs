@@ -368,36 +368,44 @@ public class GridManager : MonoBehaviour
                 northArrows.transform.position += new Vector3(0, 0, adjustmentAmount);
                 westArrows.transform.position += new Vector3(0, 0, adjustmentAmount/2);
                 eastArrows.transform.position += new Vector3(0, 0, adjustmentAmount/2);
+                mainCameraMovement.updateBounds(true, true, 0f, 1f);
             } else if (direction == "South") {
                 southArrows.transform.position += new Vector3(0, 0, -adjustmentAmount);
                 westArrows.transform.position += new Vector3(0, 0, (-adjustmentAmount)/2);
                 eastArrows.transform.position += new Vector3(0, 0, (-adjustmentAmount)/2);
+                mainCameraMovement.updateBounds(true, false, 0f, 1f);
             } else if (direction == "East") {
                 eastArrows.transform.position += new Vector3(adjustmentAmount, 0, 0);
                 northArrows.transform.position += new Vector3(adjustmentAmount/2, 0, 0);
                 southArrows.transform.position += new Vector3(adjustmentAmount/2, 0, 0);
+                mainCameraMovement.updateBounds(true, true, 1f, 0f);
             } else if (direction == "West") {
                 westArrows.transform.position += new Vector3(-adjustmentAmount, 0, 0);
                 northArrows.transform.position += new Vector3((-adjustmentAmount)/2, 0, 0);
                 southArrows.transform.position += new Vector3((-adjustmentAmount)/2, 0, 0);
+                mainCameraMovement.updateBounds(true, false, 1f, 0f);
             }
         } else {
             if (direction == "North") {
                 northArrows.transform.position += new Vector3(0, 0, -adjustmentAmount);
                 westArrows.transform.position += new Vector3(0, 0, (-adjustmentAmount)/2);
                 eastArrows.transform.position += new Vector3(0, 0, (-adjustmentAmount)/2);
+                mainCameraMovement.updateBounds(false, true, 0f, 1f);
             } else if (direction == "South") {
                 southArrows.transform.position += new Vector3(0, 0, adjustmentAmount);
                 westArrows.transform.position += new Vector3(0, 0, adjustmentAmount/2);
                 eastArrows.transform.position += new Vector3(0, 0, adjustmentAmount/2);
+                mainCameraMovement.updateBounds(false, false, 0f, 1f);
             } else if (direction == "East") {
                 eastArrows.transform.position += new Vector3(-adjustmentAmount, 0, 0);
                 northArrows.transform.position += new Vector3((-adjustmentAmount)/2, 0, 0);
                 southArrows.transform.position += new Vector3((-adjustmentAmount)/2, 0, 0);
+                mainCameraMovement.updateBounds(false, true, 1f, 0f);
             } else if (direction == "West") {
                 westArrows.transform.position += new Vector3(adjustmentAmount, 0, 0);
                 northArrows.transform.position += new Vector3(adjustmentAmount/2, 0, 0);
                 southArrows.transform.position += new Vector3(adjustmentAmount/2, 0, 0);
+                mainCameraMovement.updateBounds(false, false, 1f, 0f);
             }
         }
         northArrowsPosition = northArrows.transform.position;
@@ -436,5 +444,9 @@ public class GridManager : MonoBehaviour
 
     public Vector3 getWestArrowsPosition() {
         return westArrowsPosition;
+    }
+
+    public void SettingsToggle() {
+        UI = !UI;
     }
 }
