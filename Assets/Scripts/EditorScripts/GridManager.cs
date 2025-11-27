@@ -17,9 +17,10 @@ public class GridManager : MonoBehaviour
     private float offsetY = 0.5f;
     public PrefabOptionsMenu prefabOptionsMenu;
     public bool UI = false;
+    public bool prefabUI = false;
     public SaveLoadManager saveLoadManager;
-    private Vector3 playerStartPosition;
-    private Quaternion playerStartRotation;
+    public Vector3 playerStartPosition;
+    public Quaternion playerStartRotation;
     private Vector3 groundPosition;
     private Vector3 groundScale;
     private Vector3 northArrowsPosition;
@@ -60,10 +61,18 @@ public class GridManager : MonoBehaviour
         }
     }
 
-
     void Update()
     {
         if (placement) {
+            if (UI) {
+                placement = false;
+                prefabToPlace = null;
+                if (ghostObject != null) {
+                    Destroy(ghostObject);
+                }
+                ghostObject = null;
+                return;
+            }
             Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 
@@ -118,7 +127,7 @@ public class GridManager : MonoBehaviour
                 }
                 ghostObject = null;
             }
-        } else if (!UI && !placement) {
+        } else if (!UI && !placement && !prefabUI) {
             if (Input.GetMouseButtonDown(0)) {
                 Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
                 RaycastHit hit;
@@ -126,7 +135,7 @@ public class GridManager : MonoBehaviour
                 if (Physics.Raycast(ray, out hit)) {
                     Scene currentScene = SceneManager.GetActiveScene();
                     if (hit.collider.gameObject.tag == "Rotatable" || hit.collider.gameObject.tag == "Direction" || hit.collider.gameObject.tag == "Goal" || ((hit.collider.gameObject.tag == "Player" || hit.collider.gameObject.tag == "Enemy") && currentScene.name == "LevelEditor")) {
-                        UI = true;
+                        prefabUI = true;
                         currentPrefab = hit.collider.gameObject;
                         if (currentPrefab.GetComponent<Renderer>() == null) {
                             for (int i = 0; i < currentPrefab.transform.childCount; i++) {
@@ -168,9 +177,9 @@ public class GridManager : MonoBehaviour
                     }
                 }
             }
-        } else if (UI) {
+        } else if (prefabUI) {
             if (Input.GetMouseButtonDown(1) || (Input.GetMouseButtonDown(0) && !IsPointerOverUIObject())) {
-                UI = false;
+                prefabUI = false;
                 if (currentPrefab.GetComponent<Renderer>() == null) {
                     for (int i = 0; i < currentPrefab.transform.childCount; i++) {
                         if (currentPrefab.transform.GetChild(i).GetComponent<Renderer>() != null) {
@@ -190,7 +199,7 @@ public class GridManager : MonoBehaviour
         prefabToPlace = obj;
         placement = true;
         CreateGhostObject();
-        UI = false;
+        prefabUI = false;
         prefabOptionsMenu.CloseMenu();
     }
 
@@ -200,7 +209,7 @@ public class GridManager : MonoBehaviour
 
     public void DeleteButtonClick() {
         prefabOptionsMenu.DeletePrefab();
-        UI = false;
+        prefabUI = false;
     }
 
     void CreateGhostObject() {
@@ -446,7 +455,11 @@ public class GridManager : MonoBehaviour
         return westArrowsPosition;
     }
 
-    public void SettingsToggle() {
+    public void UIToggle() {
         UI = !UI;
+    }
+
+    public bool isUIOpen() {
+        return UI;
     }
 }

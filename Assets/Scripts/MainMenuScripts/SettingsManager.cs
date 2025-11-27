@@ -14,7 +14,7 @@ public class SettingsManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape)) {
             settingsUI.ToggleSettingsUI();
             if (gridManager != null) {
-                gridManager.SettingsToggle();
+                gridManager.UIToggle();
             }
         }
     }

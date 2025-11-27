@@ -1647,6 +1647,8 @@ MonoBehaviour:
   prefabOptionsMenu: {fileID: 760840555}
   UI: 0
   saveLoadManager: {fileID: 112243961}
+  playerStartPosition: {x: 0, y: 0, z: 0}
+  playerStartRotation: {x: 0, y: 0, z: 0, w: 0}
   levelComplete: 0
   saveLevelUI: {fileID: 0}
   mainCameraMovement: {fileID: 963194229}
@@ -4977,10 +4979,10 @@ RectTransform:
   m_Father: {fileID: 1012401964}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -325}
-  m_SizeDelta: {x: 0, y: -650}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 75}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &819340573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5738,8 +5740,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffa54b6ef3172c24fb4e416880bd99d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
-  rotationSpeed: 500
   cameraSpeedInput: {fileID: 2089377160}
   cameraRotationSpeedInput: {fileID: 1644805218}
   cameraSpeedSlider: {fileID: 210402210}
@@ -6356,6 +6356,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95201887ff146ed468eddd5d3ff43764, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gridManager: {fileID: 199498347}
 --- !u!1 &1080400596
 GameObject:
   m_ObjectHideFlags: 0

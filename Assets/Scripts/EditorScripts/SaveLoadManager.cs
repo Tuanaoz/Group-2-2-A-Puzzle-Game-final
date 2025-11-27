@@ -55,6 +55,7 @@ public class SaveLoadManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        gridManager.UIToggle();
         levelFolder = Application.dataPath + "/CreatedLevels/";
         if (!Directory.Exists(levelFolder)) {
             Directory.CreateDirectory(levelFolder);
@@ -205,6 +206,7 @@ public class SaveLoadManager : MonoBehaviour
 
     public void HideLevelSelectionUI() {
         levelSelectionUI.gameObject.SetActive(false);
+        gridManager.UIToggle();
         mainCameraMovement.StartMovement();
     }
 
