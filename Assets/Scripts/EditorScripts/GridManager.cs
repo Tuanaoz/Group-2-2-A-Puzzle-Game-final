@@ -32,6 +32,10 @@ public class GridManager : MonoBehaviour
     private Material originalMaterial;
     private Color originalColor;
     private GameObject currentPrefab;
+    private bool characterReached = false;
+    private bool character2Reached = false;
+    private Vector3 checkpointPosition;
+    private bool checkpointReached = false;
 
     public Vector3 GridToWorld(Vector3Int gridPos)
     {
@@ -285,7 +289,7 @@ public class GridManager : MonoBehaviour
     }
 
     public void StartMovement() {
-        Transform character = placementContainer.transform.Find("Character(Clone)");
+        Transform character = placementContainer.transform.Find("Character");
         CharacterMovement movementScript = character.GetComponent<CharacterMovement>();
         movementScript.StartMovement();
     }
@@ -353,6 +357,32 @@ public class GridManager : MonoBehaviour
         }
         groundPosition = transform.position;
         groundScale = transform.localScale;
+    }
+
+    public void RegisterGoalReached(string tag)
+    {
+        if (tag == "character")
+            characterReached = true;
+        else if (tag == "character2")
+            character2Reached = true;
+
+        CheckVictoryCondition();
+    }
+
+    private void CheckVictoryCondition()
+    {
+        int goalCount = GameObject.FindGameObjectsWithTag("Goal").Length;
+
+        if (goalCount <= 1)
+        {
+        if (characterReached || character2Reached)
+            setLevelComplete(true);
+    }
+    else
+    {
+        if (characterReached && character2Reached)
+            setLevelComplete(true);
+        }
     }
 
     public void adjustArrowPositions(bool expand, string direction) {
@@ -437,4 +467,35 @@ public class GridManager : MonoBehaviour
     public Vector3 getWestArrowsPosition() {
         return westArrowsPosition;
     }
+
+    public void TriggerCheckpoint(Vector3 position) {
+        checkpointPosition = position;
+        checkpointReached = true;
+
+        mainCameraMovement.StartMovement();
+
+        Transform character = placementContainer.transform.Find("Character");
+        if (character != null)
+        {
+            character.GetComponent<CharacterMovement>().PauseMovement();
+        }
+
+        Time.timeScale = 0f;
+}
+    public void ResumeFromCheckpoint() {
+            if (!checkpointReached)
+                return;
+
+            Time.timeScale = 1f;
+
+            Transform character = placementContainer.transform.Find("Character");
+            if (character != null)
+            {
+                character.GetComponent<CharacterMovement>().ResumeMovement();
+            }
+
+            mainCameraMovement.StopMovement();
+            checkpointReached = false;
+        }
+
 }

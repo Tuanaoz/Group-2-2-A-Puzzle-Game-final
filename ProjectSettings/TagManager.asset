@@ -12,6 +12,7 @@ TagManager:
   - Expand
   - UI
   - Contract
+  - character2
   layers:
   - Default
   - TransparentFX
