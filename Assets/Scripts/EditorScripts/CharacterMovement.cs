@@ -37,4 +37,16 @@ public class CharacterMovement : MonoBehaviour
         // rb.isKinematic = false;
         // rb.collisionDetectionMode = CollisionDetectionMode.Continuous;
     }
+
+    public void PauseMovement()
+    {
+        movement = false;
+        rb.velocity = Vector3.zero;
+    }
+
+    public void ResumeMovement()
+    {
+        movement = true;
+    }
+
 }
