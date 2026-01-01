@@ -192,6 +192,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91f276406ed57f9428ad8ce1b5a3dd93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameFailBehaviour: {fileID: 0}
   levelCompleteUI: {fileID: 0}
   gameFailUI: {fileID: 0}

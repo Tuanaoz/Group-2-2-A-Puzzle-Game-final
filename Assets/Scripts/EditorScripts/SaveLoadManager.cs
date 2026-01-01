@@ -47,6 +47,9 @@ public class SaveLoadManager : MonoBehaviour
     public TMP_InputField levelNameInput;
     public CameraMovement mainCameraMovement;
 
+    public OverwriteLevelUI overwriteLevelUI;
+    public SaveLevelUI saveLevelUI;
+
     [Header("Level Settings")]
     // public string folderName = "Levels";
     public string saveFileName = "tempLevelData";
@@ -86,6 +89,20 @@ public class SaveLoadManager : MonoBehaviour
         }
     }
 
+    public void LevelAlreadyExists() {
+        levelFolder = Application.dataPath + "/CreatedLevels/";
+        if (!Directory.Exists(levelFolder)) {
+            Directory.CreateDirectory(levelFolder);
+        }
+
+        if (File.Exists(levelFolder + saveFileName + ".json")) {
+            Debug.Log("Level already exists: " + saveFileName);
+            overwriteLevelUI.OpenOverwriteUI();
+        } else {
+            SaveLevel();
+        }
+    }
+
     public void SaveLevel() {
         LevelData levelData = new LevelData();
         levelData.levelName = saveFileName;
@@ -116,6 +133,8 @@ public class SaveLoadManager : MonoBehaviour
         }  
         File.WriteAllText(levelFolder + saveFileName + ".json", json);
         Debug.Log("Level saved: " + levelFolder + saveFileName + ".json");
+        overwriteLevelUI.CloseOverwriteUI();
+        saveLevelUI.CloseSaveUI();
     }
     
     public void LoadLevel(String levelName) {

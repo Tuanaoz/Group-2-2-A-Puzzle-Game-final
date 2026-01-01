@@ -131,14 +131,14 @@ public class GridManager : MonoBehaviour
                 }
                 ghostObject = null;
             }
-        } else if (!UI && !placement && !prefabUI) {
+        } else if (!UI && !placement && !prefabUI && !IsPointerOverUIObject()) {
             if (Input.GetMouseButtonDown(0)) {
                 Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
                 RaycastHit hit;
 
                 if (Physics.Raycast(ray, out hit)) {
                     Scene currentScene = SceneManager.GetActiveScene();
-                    if (hit.collider.gameObject.tag == "Rotatable" || hit.collider.gameObject.tag == "Direction" || hit.collider.gameObject.tag == "Goal" || ((hit.collider.gameObject.tag == "Player" || hit.collider.gameObject.tag == "Enemy") && currentScene.name == "LevelEditor")) {
+                    if (hit.collider.gameObject.tag == "Rotatable" || hit.collider.gameObject.tag == "Direction" || hit.collider.gameObject.tag == "Goal" || hit.collider.gameObject.tag == "character2" || ((hit.collider.gameObject.tag == "Player" || hit.collider.gameObject.tag == "Enemy") && currentScene.name == "LevelEditor")) {
                         prefabUI = true;
                         currentPrefab = hit.collider.gameObject;
                         if (currentPrefab.GetComponent<Renderer>() == null) {

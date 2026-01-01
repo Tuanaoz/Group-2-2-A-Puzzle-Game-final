@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class CameraMovement : MonoBehaviour
 {
@@ -75,6 +76,11 @@ public class CameraMovement : MonoBehaviour
     }
 
     void Zoom() {
+
+        if (IsPointerOverUIObject()) {
+            return;
+        }
+
         float scroll = Input.GetAxis("Mouse ScrollWheel");
         Vector3 move = transform.forward * scroll * zoomSpeed * 10f * Time.deltaTime;
 
@@ -159,5 +165,13 @@ public class CameraMovement : MonoBehaviour
         CameraSpeed.rotationSpeed = newRotationSpeed;
         cameraRotationSpeedInput.text = newRotationSpeed.ToString();
         cameraRotationSpeedSlider.value = newRotationSpeed;
+    }
+
+    private bool IsPointerOverUIObject() {
+        PointerEventData eventDataCurrentPosition = new PointerEventData(EventSystem.current);
+        eventDataCurrentPosition.position = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+        List<RaycastResult> results = new List<RaycastResult>();
+        EventSystem.current.RaycastAll(eventDataCurrentPosition, results);
+        return results.Count > 0;
     }
 }
