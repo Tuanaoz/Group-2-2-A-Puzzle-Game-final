@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4661765857017439141}
   - component: {fileID: 1015428650710383905}
   - component: {fileID: -8985969549439768603}
+  - component: {fileID: -7503950224585794809}
   m_Layer: 0
   m_Name: Goal_Character2
   m_TagString: character2
@@ -119,3 +120,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   expectedTag: character2
+--- !u!114 &-7503950224585794809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2762345639247192506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6b30f9725057384a867f8a3ae62c9d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offsetY: 0.025

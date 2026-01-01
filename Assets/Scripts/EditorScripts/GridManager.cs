@@ -497,5 +497,17 @@ public class GridManager : MonoBehaviour
             mainCameraMovement.StopMovement();
             checkpointReached = false;
         }
+        
+        public Switch GetSwitchAtWorld(Vector3 worldPos)
+    {
+        foreach (var sw in Object.FindObjectsByType<Switch>(FindObjectsSortMode.None))
+        {
+            if (Vector3.Distance(sw.transform.position, worldPos) < 0.3f)
+            {
+                return sw;
+            }
+        }
+        return null;
+    }
 
 }
