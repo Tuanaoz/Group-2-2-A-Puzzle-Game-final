@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class SettingsUI : MonoBehaviour
 {
-
+    
     private bool isOpen = false;
     public CameraMovement mainCamera;
+    public GameObject mainMenuButtons;
 
     // Start is called before the first frame update
     void Start()
@@ -17,32 +18,32 @@ public class SettingsUI : MonoBehaviour
     public void OpenSettingsUI() {
         this.gameObject.SetActive(true);
         isOpen = true;
-        if (!mainCamera)
-            return;
-        mainCamera.StopMovement();
+
+        // Hide main menu buttons
+        if (mainMenuButtons != null)
+            mainMenuButtons.SetActive(false);
+
+        if (mainCamera != null)
+            mainCamera.StopMovement();
     }
 
     public void CloseSettingsUI() {
         this.gameObject.SetActive(false);
         isOpen = false;
-        if (!mainCamera)
-            return;
-        mainCamera.StartMovement();
+
+        // Show main menu buttons
+        if (mainMenuButtons != null)
+            mainMenuButtons.SetActive(true);
+
+        if (mainCamera != null)
+            mainCamera.StartMovement();
     }
 
     public void ToggleSettingsUI() {
         if (isOpen) {
             CloseSettingsUI();
-            isOpen = false;
-            if (!mainCamera)
-                return;
-            mainCamera.StartMovement();
         } else {
             OpenSettingsUI();
-            isOpen = true;
-            if (!mainCamera)
-                return;
-            mainCamera.StopMovement();
         }
     }
 }

@@ -1,77 +1,150 @@
+/*
+Controls which buttons are visible in Content_Holder
+based on selected main tab and environment sub-tabs.
+*/
 using UnityEngine;
 
 public class TabManager : MonoBehaviour
 {
     public GameObject contentPanel;
-    public GameObject verticalScrollbar;
+    public GameObject contentHolder;
+    public GameObject environmentSubTabPanel;
 
-    public GameObject charactersGroup;
-    public GameObject triggersGroup;
-    public GameObject goalsGroup;
-    public GameObject utilityGroup;
-    public GameObject saveGame;
+    ButtonInfo[] allButtons;
+    MainTab? currentOpenTab = null;
 
-    private GameObject currentVisibleGroup = null;
-
-    void Start()
+    void Awake() // Error handling
     {
-        charactersGroup.SetActive(false);
-        triggersGroup.SetActive(false);
-        goalsGroup.SetActive(false);
-        utilityGroup.SetActive(false);
-        saveGame.SetActive(false);
-
-        contentPanel.SetActive(false);
-        verticalScrollbar.SetActive(false);
-    }
-
-    public void ToggleCharacters()
-    {
-        ToggleGroup(charactersGroup);
-    }
-
-    public void ToggleTriggers()
-    {
-        ToggleGroup(triggersGroup);
-    }
-
-    public void ToggleGoals()
-    {
-        ToggleGroup(goalsGroup);
-    }
-
-    public void ToggleUtility()
-    {
-        ToggleGroup(utilityGroup);
-    }
-
-    public void ToggleSaveGame()
-    {
-        ToggleGroup(saveGame);
-    }
-
-    private void ToggleGroup(GameObject selectedGroup)
-    {
-        bool isSameGroup = (currentVisibleGroup == selectedGroup);
-
-        charactersGroup.SetActive(false);
-        triggersGroup.SetActive(false);
-        goalsGroup.SetActive(false);
-        utilityGroup.SetActive(false);
-        saveGame.SetActive(false);
-
-        if (isSameGroup)
+        if (contentHolder == null)
         {
+            Debug.LogError("Content Holder is not assigned.");
+            return;
+        }
+
+        allButtons = contentHolder.GetComponentsInChildren<ButtonInfo>(true);
+    }
+
+    void Start() // Initial UI state
+    {
+        currentOpenTab = null;
+
+        if (contentPanel != null)
             contentPanel.SetActive(false);
-            verticalScrollbar.SetActive(false);
-            currentVisibleGroup = null;
-        }
-        else
+
+        if (environmentSubTabPanel != null)
+            environmentSubTabPanel.SetActive(false);
+
+        HideAllButtons();
+    }
+
+// Opens specific tabs and shows related prefab
+    public void OpenEnvironmentTab()
+    {
+        if (currentOpenTab == MainTab.Environment)
         {
-            selectedGroup.SetActive(true);
-            contentPanel.SetActive(true);
-            verticalScrollbar.SetActive(true);
-            currentVisibleGroup = selectedGroup;
+            CloseContentPanel();
+            return;
         }
+
+        currentOpenTab = MainTab.Environment;
+
+        contentPanel.SetActive(true);
+        HideAllButtons();
+        environmentSubTabPanel.SetActive(true);
+    }
+
+    public void OpenCharactersTab()
+    {
+        ShowMainTab(MainTab.Characters);
+    }
+
+    public void OpenTriggersTab()
+    {
+        ShowMainTab(MainTab.Triggers);
+    }
+
+    public void OpenGoalsTab()
+    {
+        ShowMainTab(MainTab.Goals);
+    }
+
+    public void OpenUtilityTab()
+    {
+        ShowMainTab(MainTab.Utility);
+    }
+
+// Environment tab specific method to show sub-tabs
+    public void OpenEnvironmentGroup(EnvironmentGroup subTab)
+    {
+        foreach (var button in allButtons)
+        {
+            bool match =
+                button.mainTab == MainTab.Environment &&
+                button.environmentSubTab == subTab;
+
+            button.gameObject.SetActive(match);
+        }
+    }
+
+// Environment sub-tabs
+    public void OpenEnvironmentTrees()
+    {
+        OpenEnvironmentGroup(EnvironmentGroup.Trees);
+    }
+
+    public void OpenEnvironmentRocks()
+    {
+        OpenEnvironmentGroup(EnvironmentGroup.Rocks);
+    }
+
+    public void OpenEnvironmentGround()
+    {
+        OpenEnvironmentGroup(EnvironmentGroup.Ground);
+    }
+
+    public void OpenEnvironmentCrystals()
+    {
+        OpenEnvironmentGroup(EnvironmentGroup.Crystals);
+    }
+
+    void ShowMainTab(MainTab tab)
+    {
+        if (currentOpenTab == tab)
+        {
+            CloseContentPanel();
+            return;
+        }
+
+        currentOpenTab = tab;
+
+        contentPanel.SetActive(true);
+        environmentSubTabPanel.SetActive(false);
+
+        foreach (var button in allButtons)
+            button.gameObject.SetActive(button.mainTab == tab);
+    }
+
+    void HideAllButtons()
+    {
+        foreach (var button in allButtons)
+            button.gameObject.SetActive(false);
+    }
+
+    void CloseContent()
+    {
+        currentOpenTab = null;
+
+        HideAllButtons();
+        environmentSubTabPanel.SetActive(false);
+        contentHolder.SetActive(false);
+    }
+
+    void CloseContentPanel()
+    {
+        currentOpenTab = null;
+
+        HideAllButtons();
+        environmentSubTabPanel.SetActive(false);
+        contentPanel.SetActive(false);
     }
 }
