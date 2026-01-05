@@ -58,6 +58,11 @@ public class SaveLoadManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (!PlayerPrefs.HasKey("HighestUnlockedLevel"))
+        {
+            PlayerPrefs.SetInt("HighestUnlockedLevel", 1);
+        }
+
         gridManager.UIToggle();
         levelFolder = Application.dataPath + "/CreatedLevels/";
         if (!Directory.Exists(levelFolder)) {
@@ -65,15 +70,33 @@ public class SaveLoadManager : MonoBehaviour
         }  
 
         Scene currentScene = SceneManager.GetActiveScene();
-        if (currentScene.name == "PlayLevel") { 
+        if (currentScene.name == "PlayLevel") {
             TextAsset[] levels = Resources.LoadAll<TextAsset>("Levels");
-            foreach (TextAsset level in levels) {
+            int unlocked = PlayerPrefs.GetInt("HighestUnlockedLevel", 1);
+                for(int i = 0; i < levels.Length; i++)
+                {
+                    int levelID = i + 1;
+                    TextAsset level = levels[i];
                 Debug.Log("Found level in Resources: " + level.name);
                 GameObject prefab = Array.Find(placeablePrefabs, p => p.name == "Level_Button");
                 GameObject btnObj = Instantiate(prefab, levelPanel);
                 Button btn = btnObj.GetComponent<Button>();
-                btn.GetComponentInChildren<TMP_Text>().text = level.name;
-                btn.onClick.AddListener(() => LoadLevelFromResources(level.name));
+                Transform UnlockedIcon = btnObj.transform.Find("UnlockedIcon");
+                Transform LockedIcon = btnObj.transform.Find("LockedIcon");
+                btn.GetComponentInChildren<TMP_Text>().text = "Level " + levelID;
+                if (levelID <= unlocked)
+                {
+                    btn.interactable = true;
+                    UnlockedIcon.gameObject.SetActive(true);
+                    LockedIcon.gameObject.SetActive(false);
+                    btn.onClick.AddListener(() => LoadLevelFromResources(level.name));
+                }
+                else
+                {
+                    btn.interactable = false;
+                    UnlockedIcon.gameObject.SetActive(false);
+                    LockedIcon.gameObject.SetActive(true);
+                }
             }
         } else if (currentScene.name == "LevelEditor") {
             string[] levels = Directory.GetFiles(levelFolder, "*.json");
@@ -185,6 +208,15 @@ public class SaveLoadManager : MonoBehaviour
     }
 
     public void LoadLevelFromResources(String levelName) {
+        TextAsset[] levels = Resources.LoadAll<TextAsset>("Levels");
+        for (int i = 0; i < levels.Length; i++)
+        {
+            if (levels[i].name == levelName)
+            {
+                PlayerPrefs.SetInt("CurrentLevelID", i + 1);
+                break;
+            }
+        }
         // string levelName = saveFileName;
         TextAsset levelFile = Resources.Load<TextAsset>("Levels/" + levelName);
         
@@ -233,4 +265,22 @@ public class SaveLoadManager : MonoBehaviour
         saveFileName = levelNameInput.text;
     }
 
+    public void CompleteLevel(int currentLevelID)
+    {
+        int unlocked = PlayerPrefs.GetInt("HighestUnlockedLevel", 1);
+
+        if (currentLevelID >= unlocked)
+        {
+            PlayerPrefs.SetInt("HighestUnlockedLevel", currentLevelID + 1);
+        }
+
+        SceneManager.LoadScene("LevelSelectScene");
+    }
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            CompleteLevel(PlayerPrefs.GetInt("CurrentLevelID"));
+        }
+    }
 }
