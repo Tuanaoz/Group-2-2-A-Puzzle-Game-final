@@ -7,7 +7,7 @@ public class CharacterMovement : MonoBehaviour
     
     public float speed = 5f;
     public bool movement = false;
-    Rigidbody rb;
+    private Rigidbody rb;
 
     // Start is called before the first frame update
     void Start()
@@ -18,8 +18,8 @@ public class CharacterMovement : MonoBehaviour
             Debug.LogError("No Rigidbody component found on " + gameObject.name + ". Please add a Rigidbody component.");
             return;
         }
-        // rb.useGravity = false;
-        // rb.isKinematic = false;
+        rb.useGravity = false;
+        rb.isKinematic = false;
     }
 
     // Update is called once per frame
@@ -33,20 +33,19 @@ public class CharacterMovement : MonoBehaviour
 
     public void StartMovement() {
         movement = true;
-        // rb.useGravity = true;
-        // rb.isKinematic = false;
-        // rb.collisionDetectionMode = CollisionDetectionMode.Continuous;
+        if (rb != null) {
+            rb.useGravity = true;
+            rb.isKinematic = false;
+            rb.collisionDetectionMode = CollisionDetectionMode.Continuous;
+        }
     }
 
     public void PauseMovement()
     {
         movement = false;
-        rb.velocity = Vector3.zero;
-    }
-
-    public void ResumeMovement()
-    {
-        movement = true;
+        if (rb != null) {
+            rb.velocity = Vector3.zero;
+        }
     }
 
 }
