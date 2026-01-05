@@ -21,6 +21,8 @@ public class GridManager : MonoBehaviour
     public SaveLoadManager saveLoadManager;
     public Vector3 playerStartPosition;
     public Quaternion playerStartRotation;
+    public List<Vector3> characterStartPositions = new List<Vector3>();
+    public List<Quaternion> characterStartRotations = new List<Quaternion>();
     private Vector3 groundPosition;
     private Vector3 groundScale;
     private Vector3 northArrowsPosition;
@@ -62,6 +64,19 @@ public class GridManager : MonoBehaviour
                 Vector3 worldPos = GridToWorld(new Vector3Int(x, 0, z));
                 Gizmos.DrawWireCube(worldPos, cellSize);
             }
+        }
+    }
+
+    void Start()
+    {
+        if (SceneManager.GetActiveScene().name == "LevelEditor") {
+            groundPosition = transform.position;
+            groundScale = transform.localScale;
+
+            northArrowsPosition = GameObject.Find("Arrows_North").transform.position;
+            southArrowsPosition = GameObject.Find("Arrows_South").transform.position;
+            eastArrowsPosition = GameObject.Find("Arrows_East").transform.position;
+            westArrowsPosition = GameObject.Find("Arrows_West").transform.position;
         }
     }
 
@@ -116,6 +131,8 @@ public class GridManager : MonoBehaviour
                     }
                     snappedWorldPos.y = offsetY; // Adjust for object height
                     if (prefabToPlace.tag == "Player") {
+                        characterStartPositions.Add(snappedWorldPos);
+                        characterStartRotations.Add(ghostObject.transform.rotation);
                         playerStartPosition = snappedWorldPos;
                         playerStartRotation = ghostObject.transform.rotation;
                     }
@@ -295,12 +312,6 @@ public class GridManager : MonoBehaviour
             player.transform.position = playerStartPosition;
             player.transform.rotation = playerStartRotation;
         }
-    }
-
-    public void StartMovement() {
-        Transform character = placementContainer.transform.Find("Character");
-        CharacterMovement movementScript = character.GetComponent<CharacterMovement>();
-        movementScript.StartMovement();
     }
 
     public void BackToMainMenu() {
@@ -516,7 +527,7 @@ public class GridManager : MonoBehaviour
             Transform character = placementContainer.transform.Find("Character");
             if (character != null)
             {
-                character.GetComponent<CharacterMovement>().ResumeMovement();
+                character.GetComponent<CharacterMovement>().StartMovement();
             }
 
             mainCameraMovement.StopMovement();
