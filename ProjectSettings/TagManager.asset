@@ -13,6 +13,11 @@ TagManager:
   - UI
   - Contract
   - character2
+  - Acid
+  - Lava
+  - Switch
+  - Spikes
+  - Hold
   layers:
   - Default
   - TransparentFX

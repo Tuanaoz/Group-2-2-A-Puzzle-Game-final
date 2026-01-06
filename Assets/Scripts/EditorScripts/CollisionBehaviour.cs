@@ -60,4 +60,14 @@ public class CollisionBehaviour : MonoBehaviour
             levelCompleteUI.ShowLevelComplete();
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Acid") || other.CompareTag("Lava") || other.CompareTag("Spikes"))
+        {
+            Debug.Log("Game Over");
+            gameFailUI.ShowFail();
+            Destroy(this.gameObject);
+        }
+    }
 }

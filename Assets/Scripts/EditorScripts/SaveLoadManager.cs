@@ -29,6 +29,7 @@ public class LevelData {
     public Quaternion playerSpawnRotation;
     public Vector3 grounPosition;
     public Vector3 groundScale;
+    public int groundThemeIndex;
     public Vector3 northArrowsPosition;
     public Vector3 southArrowsPosition;
     public Vector3 eastArrowsPosition;
@@ -40,6 +41,7 @@ public class SaveLoadManager : MonoBehaviour
     public Transform placementContainer;
     public GameObject[] placeablePrefabs;
     public GridManager gridManager;
+    public GroundTheme groundTheme;
 
     public Transform levelPanel;
     public Transform levelSelectionUI;
@@ -118,6 +120,7 @@ public class SaveLoadManager : MonoBehaviour
         levelData.playerSpawnRotation = gridManager.getPlayerSpawnRotation();
         levelData.grounPosition = gridManager.getGroundPosition();
         levelData.groundScale = gridManager.getGroundScale();
+        levelData.groundThemeIndex = groundTheme.currentThemeIndex;
         levelData.northArrowsPosition = gridManager.getNorthArrowsPosition();
         levelData.southArrowsPosition = gridManager.getSouthArrowsPosition();
         levelData.eastArrowsPosition = gridManager.getEastArrowsPosition();
@@ -165,6 +168,12 @@ public class SaveLoadManager : MonoBehaviour
         GameObject ground = GameObject.Find("Ground");
         ground.transform.position = levelData.grounPosition;
         ground.transform.localScale = levelData.groundScale;
+
+        GroundTheme themeController=FindFirstObjectByType<GroundTheme>();
+            if (themeController != null)
+            {
+                themeController.SetTheme(levelData.groundThemeIndex);
+            }
 
         foreach (PlacedObjectData objData in levelData.placedObjects) {
             GameObject prefab = Array.Find(placeablePrefabs, p => p.name == objData.prefabName);

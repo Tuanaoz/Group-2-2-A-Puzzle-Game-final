@@ -4,25 +4,25 @@ public class Switch : MonoBehaviour
 {
     public Door connectedToDoor;
     public Vector2Int moveDirection;
+    
     private bool isPressed = false;
 
-    public void SetPressed(bool state)
+// Opens the related door once when the player presses on it
+    public void SetPressed()
     {
-        if (isPressed == state) return;
-        isPressed = state;
-        connectedToDoor.SetOpen(isPressed);
+        if (isPressed) return;
+        isPressed = true;
+        if (connectedToDoor != null)
+        {
+            connectedToDoor.SetOpen(true);
+        }
     }
 
     void OnTriggerEnter(Collider other)
     {
+//Activate switch when player steps on it
         if (!other.CompareTag("Player")) return;
 
-        SetPressed(true);
-    }
-
-    void OnTriggerExit(Collider other)
-    {
-        if (!other.CompareTag("Player")) return;
-        SetPressed(false);
+        SetPressed();
     }
 }
