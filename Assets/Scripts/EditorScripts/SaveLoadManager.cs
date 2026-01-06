@@ -57,13 +57,14 @@ public class SaveLoadManager : MonoBehaviour
 
     void Start()
     {
-        gridManager.UIToggle();
+        Scene  currentScene=SceneManager.GetActiveScene();
+        if (currentScene.name=="LevelEditor" && gridManager != null) {
+                    gridManager.UIToggle();
+        }
         levelFolder = Application.dataPath + "/CreatedLevels/";
         if (!Directory.Exists(levelFolder)) {
             Directory.CreateDirectory(levelFolder);
         }
-
-        Scene currentScene = SceneManager.GetActiveScene();
         if (currentScene.name == "PlayLevel") {
             TextAsset[] levels = Resources.LoadAll<TextAsset>("Levels");
             for(int i = 0; i < levels.Length; i++)
@@ -76,14 +77,7 @@ public class SaveLoadManager : MonoBehaviour
                 GameObject btnObj = Instantiate(prefab, levelPanel);
                 Button btn = btnObj.GetComponent<Button>();
 
-                Transform UnlockedIcon = btnObj.transform.Find("UnlockedIcon");
-                Transform LockedIcon = btnObj.transform.Find("LockedIcon");
-
                 btn.GetComponentInChildren<TMP_Text>().text = "Level " + levelID;
-
-                btn.interactable = true;
-                UnlockedIcon.gameObject.SetActive(true);
-                LockedIcon.gameObject.SetActive(false);
 
                 btn.onClick.AddListener(() => LoadLevelFromResources(level.name));
             }
@@ -187,7 +181,9 @@ public class SaveLoadManager : MonoBehaviour
 
     public void HideLevelSelectionUI() {
         levelSelectionUI.gameObject.SetActive(false);
-        gridManager.UIToggle();
+        if (gridManager!=null){
+            gridManager.UIToggle();
+        }
         mainCameraMovement.StartMovement();
     }
 
