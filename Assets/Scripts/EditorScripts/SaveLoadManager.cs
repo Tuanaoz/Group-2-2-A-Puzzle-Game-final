@@ -238,8 +238,8 @@ public class SaveLoadManager : MonoBehaviour
 
     public void HideLevelSelectionUI() {
         levelSelectionUI.gameObject.SetActive(false);
-        if (gridManager!=null){
-            // gridManager.UIToggle();
+        if (gridManager!=null && SceneManager.GetActiveScene().name == "LevelEditor"){
+            gridManager.UIToggle();
         }
         mainCameraMovement.StartMovement();
     }
