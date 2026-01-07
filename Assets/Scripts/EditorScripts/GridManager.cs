@@ -284,12 +284,20 @@ public class GridManager : MonoBehaviour
         }
     }
 
-    public Vector3 getPlayerSpawnPosition() {
-        return playerStartPosition;
+    public Vector3 getPlayerSpawnPosition(int index) {
+        return characterStartPositions[index];
     }
 
-    public Quaternion getPlayerSpawnRotation() {
-        return playerStartRotation;
+    public Quaternion getPlayerSpawnRotation(int index) {
+        return characterStartRotations[index];
+    }
+
+    public void addCharacterStartPosition(Vector3 position) {
+        characterStartPositions.Add(position);
+    }
+
+    public void addCharacterStartRotation(Quaternion rotation) {
+        characterStartRotations.Add(rotation);
     }
 
     public void setLevelComplete(bool complete) {
@@ -494,6 +502,25 @@ public class GridManager : MonoBehaviour
 
     public Vector3 getWestArrowsPosition() {
         return westArrowsPosition;
+    }
+
+    public void setArrowPositions(Vector3 northPos, Vector3 southPos, Vector3 eastPos, Vector3 westPos) {
+        GameObject northArrows = GameObject.Find("Arrows_North");
+        GameObject southArrows = GameObject.Find("Arrows_South");
+        GameObject eastArrows = GameObject.Find("Arrows_East");
+        GameObject westArrows = GameObject.Find("Arrows_West");
+
+        northArrowsPosition = northPos;
+        northArrows.transform.position = northPos;
+
+        southArrowsPosition = southPos;
+        southArrows.transform.position = southPos;
+
+        eastArrowsPosition = eastPos;
+        eastArrows.transform.position = eastPos;
+
+        westArrowsPosition = westPos;
+        westArrows.transform.position = westPos;
     }
 
     public void UIToggle() {

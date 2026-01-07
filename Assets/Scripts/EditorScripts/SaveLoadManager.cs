@@ -8,6 +8,17 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 [Serializable]
+public class CharacterData {
+    public Vector3 position;
+    public Quaternion rotation;
+
+    public CharacterData(Vector3 pos, Quaternion rot) {
+        position = pos;
+        rotation = rot;
+    }
+}
+
+[Serializable]
 public class PlacedObjectData {
     public string prefabName;
     public Vector3 position;
@@ -25,8 +36,7 @@ public class PlacedObjectData {
 public class LevelData {
     public string levelName;
     public List<PlacedObjectData> placedObjects = new List<PlacedObjectData>();
-    public Vector3 playerStartPosition;
-    public Quaternion playerSpawnRotation;
+    public List<CharacterData> characters = new List<CharacterData>();
     public Vector3 grounPosition;
     public Vector3 groundScale;
     public int groundThemeIndex;
@@ -34,6 +44,8 @@ public class LevelData {
     public Vector3 southArrowsPosition;
     public Vector3 eastArrowsPosition;
     public Vector3 westArrowsPosition;
+    public int bonusCollectibleCount;
+    public int bonusCollected;
 }
 
 public class SaveLoadManager : MonoBehaviour
@@ -52,6 +64,8 @@ public class SaveLoadManager : MonoBehaviour
     public OverwriteLevelUI overwriteLevelUI;
     public SaveLevelUI saveLevelUI;
 
+    public int charCount;
+
     [Header("Level Settings")]
     public string saveFileName = "tempLevelData";
     private string levelFolder;
@@ -59,7 +73,7 @@ public class SaveLoadManager : MonoBehaviour
 
     void Start()
     {
-        Scene  currentScene=SceneManager.GetActiveScene();
+        Scene currentScene = SceneManager.GetActiveScene();
         if (currentScene.name=="LevelEditor" && gridManager != null) {
                     gridManager.UIToggle();
         }
@@ -113,11 +127,10 @@ public class SaveLoadManager : MonoBehaviour
     }
 
     public void SaveLevel() {
+        charCount = 0;
         LevelData levelData = new LevelData();
         levelData.levelName = saveFileName;
 
-        levelData.playerStartPosition = gridManager.getPlayerSpawnPosition();
-        levelData.playerSpawnRotation = gridManager.getPlayerSpawnRotation();
         levelData.grounPosition = gridManager.getGroundPosition();
         levelData.groundScale = gridManager.getGroundScale();
         levelData.groundThemeIndex = groundTheme.currentThemeIndex;
@@ -126,10 +139,22 @@ public class SaveLoadManager : MonoBehaviour
         levelData.eastArrowsPosition = gridManager.getEastArrowsPosition();
         levelData.westArrowsPosition = gridManager.getWestArrowsPosition();
 
-        foreach (Transform child in placementContainer)
-        {
+        foreach (Transform child in placementContainer) {
+
+            String prefabName = child.gameObject.name.Replace("(Clone)", "").Trim();
+
+            if (prefabName == "Character") {
+                CharacterData charData = new CharacterData(
+                    gridManager.getPlayerSpawnPosition(charCount),
+                    gridManager.getPlayerSpawnRotation(charCount)
+                );
+                levelData.characters.Add(charData);
+                charCount++;
+                continue;
+            }
+
             PlacedObjectData objData = new PlacedObjectData(
-                child.gameObject.name.Replace("(Clone)", "").Trim(),
+                prefabName,
                 child.position,
                 child.rotation
             );
@@ -170,11 +195,22 @@ public class SaveLoadManager : MonoBehaviour
     private void LoadLevelFromData(LevelData levelData) {
         foreach (Transform child in placementContainer) {
             Destroy(child.gameObject);
+        
+        }
+
+        if (SceneManager.GetActiveScene().name == "LevelEditor") {
+            gridManager.setArrowPositions(
+                levelData.northArrowsPosition,
+                levelData.southArrowsPosition,
+                levelData.eastArrowsPosition,
+                levelData.westArrowsPosition
+            );
         }
 
         GameObject ground = GameObject.Find("Ground");
         ground.transform.position = levelData.grounPosition;
         ground.transform.localScale = levelData.groundScale;
+
 
         GroundTheme themeController=FindFirstObjectByType<GroundTheme>();
             if (themeController != null)
@@ -182,14 +218,19 @@ public class SaveLoadManager : MonoBehaviour
                 themeController.SetTheme(levelData.groundThemeIndex);
             }
 
+        foreach (CharacterData charData in levelData.characters) {
+            GameObject prefab = Array.Find(placeablePrefabs, p => p.name == "Character");
+            if (prefab != null) {
+                Instantiate(prefab, charData.position, charData.rotation, placementContainer);
+                gridManager.addCharacterStartPosition(charData.position);
+                gridManager.addCharacterStartRotation(charData.rotation);
+            }
+        }
+
         foreach (PlacedObjectData objData in levelData.placedObjects) {
             GameObject prefab = Array.Find(placeablePrefabs, p => p.name == objData.prefabName);
             if (prefab != null) {
-                if (objData.prefabName == "Character") {
-                    Instantiate(prefab, levelData.playerStartPosition, levelData.playerSpawnRotation, placementContainer);
-                } else {
-                    Instantiate(prefab, objData.position, objData.rotation, placementContainer);
-                }
+                Instantiate(prefab, objData.position, objData.rotation, placementContainer);
             }
         }
         HideLevelSelectionUI();
@@ -198,7 +239,7 @@ public class SaveLoadManager : MonoBehaviour
     public void HideLevelSelectionUI() {
         levelSelectionUI.gameObject.SetActive(false);
         if (gridManager!=null){
-            gridManager.UIToggle();
+            // gridManager.UIToggle();
         }
         mainCameraMovement.StartMovement();
     }

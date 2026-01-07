@@ -3049,6 +3049,34 @@ MonoBehaviour:
   - {fileID: 6390657201324780333, guid: d7c386a912a7dce47b71909ea5d19f0c, type: 3}
   - {fileID: 6456310427438319849, guid: e1b49105d07f0994a820369195a7e57f, type: 3}
   - {fileID: 8798147138954116606, guid: b1fc47116d2244e439c61c8f6e5f9a2d, type: 3}
+  - {fileID: 2169693237206497658, guid: 0517b67472db5fc4e830a76eb44b075f, type: 3}
+  - {fileID: 4766199598427542870, guid: ef5b3528fc0ba8645ba22cf750f1293c, type: 3}
+  - {fileID: 5927019070766623062, guid: f0b1e635936c1ec4bae5c74aed4cd443, type: 3}
+  - {fileID: 335781881610566663, guid: a8793a909dc43d445a3363cb90ec9f6d, type: 3}
+  - {fileID: 6108449227501448965, guid: 50adfd0b9a981314190c1eb0183cc686, type: 3}
+  - {fileID: 5575030985936643637, guid: a68d827fdb3048e46928bff7883c7c2c, type: 3}
+  - {fileID: 1916132114430185883, guid: f2e661772314c23499b71ee07d9c4505, type: 3}
+  - {fileID: 6390657201324780333, guid: d06a839f43156c54f897d1557581483a, type: 3}
+  - {fileID: 2762345639247192506, guid: e0336231f98aa1b45bc956959a2c45f5, type: 3}
+  - {fileID: 8742080882982662824, guid: 4c16e3bb987053646a464a30035f0a0e, type: 3}
+  - {fileID: 3791895457392771237, guid: 1daabd6137fe052419a05aa2b7fc4e43, type: 3}
+  - {fileID: 7633685324326584076, guid: 22257ab8ac365564b925dff5ddf4eda2, type: 3}
+  - {fileID: 4057799660831858466, guid: a64900170ccc61e489f03c65f2e194e8, type: 3}
+  - {fileID: 3835489935364246877, guid: 8391f6c477954b347894b592c02eeb29, type: 3}
+  - {fileID: 4610714766955411369, guid: 030576dd78283a84c8d51b337f352df7, type: 3}
+  - {fileID: 5895188136095002225, guid: 80c2655b108ae024ea0bf06e8a090f4f, type: 3}
+  - {fileID: 8322645832290642796, guid: 04cd9e96e2c5f0e4eb0d0937e9def078, type: 3}
+  - {fileID: 4625826544343890219, guid: 8dd0710e7ca9a154a87a8fd768588f4d, type: 3}
+  - {fileID: 1913724359144786838, guid: 3be7cd89572a0514f9ef86aa375606e7, type: 3}
+  - {fileID: 4903456007118200781, guid: 87ddb3f120637d04ebed00deeb40e55a, type: 3}
+  - {fileID: 2798657441975267971, guid: 845c5e9238581574e85ba011aea5725f, type: 3}
+  - {fileID: 6344973818417766545, guid: caa540c78c29d8e4ab0fb7df1b8b2558, type: 3}
+  - {fileID: 5384400550676650447, guid: aba00a3a9f0d5bc4cbd0b1bc12a3c58a, type: 3}
+  - {fileID: 4161150743895791228, guid: 73c246a6053362a4ab20a29df8ef198e, type: 3}
+  - {fileID: 6390657201324780333, guid: 64eb37589ad469a4d9c500c3bb8da43d, type: 3}
+  - {fileID: 923166087851526051, guid: 7cd16f91fde3e4f4fabf999f67364cab, type: 3}
+  - {fileID: 5002944707631539927, guid: 6a55f643155f3c04fbe54ae70357656e, type: 3}
+  - {fileID: 75665331733756495, guid: 69cf467392c03754e8413fc3d46c81de, type: 3}
   gridManager: {fileID: 199498347}
   groundTheme: {fileID: 252435504}
   levelPanel: {fileID: 1708340599}
@@ -18073,7 +18101,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5, y: 307.49908}
+  m_AnchoredPosition: {x: 5, y: 307.50003}
   m_SizeDelta: {x: 170, y: 2000}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1172882209
@@ -18798,9 +18826,9 @@ RectTransform:
   - {fileID: 1833443352}
   m_Father: {fileID: 431415998}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 73.75, y: -50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 55, y: 55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1224198543
@@ -21281,9 +21309,9 @@ RectTransform:
   - {fileID: 1929663133}
   m_Father: {fileID: 431415998}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 223.75, y: -50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 60, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1432461470
@@ -24556,8 +24584,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 811935975}
   m_HandleRect: {fileID: 811935974}
   m_Direction: 3
-  m_Value: 1.0000007
-  m_Size: 0.3075
+  m_Value: 1
+  m_Size: 0.30749604
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
