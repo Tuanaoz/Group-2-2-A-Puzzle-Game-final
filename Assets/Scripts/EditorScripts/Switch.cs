@@ -4,7 +4,7 @@ public class Switch : MonoBehaviour
 {
     public Door connectedToDoor;
     public Vector2Int moveDirection;
-    
+
     private bool isPressed = false;
 
 // Opens the related door once when the player presses on it
@@ -16,13 +16,5 @@ public class Switch : MonoBehaviour
         {
             connectedToDoor.SetOpen(true);
         }
-    }
-
-    void OnTriggerEnter(Collider other)
-    {
-//Activate switch when player steps on it
-        if (!other.CompareTag("Player")) return;
-
-        SetPressed();
     }
 }

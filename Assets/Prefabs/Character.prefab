@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: -6114173091369137318}
   - component: {fileID: -6702135876237394381}
   - component: {fileID: 3242002311825109665}
+  - component: {fileID: 2123043273614939534}
   m_Layer: 0
   m_Name: Character
   m_TagString: Player
@@ -194,3 +195,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelCompleteUI: {fileID: 0}
   gameFailUI: {fileID: 0}
+--- !u!114 &2123043273614939534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1075446157649888535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a478e768a9206274cbcae01b9a3ec8f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

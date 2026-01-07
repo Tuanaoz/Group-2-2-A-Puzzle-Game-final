@@ -1,6 +1,6 @@
 /*
 Controls which buttons are visible in Content_Holder
-based on selected main tab and environment sub-tabs.
+based on selected main tab and environment sub-tabs for content panel
 */
 using UnityEngine;
 
@@ -37,7 +37,7 @@ public class TabManager : MonoBehaviour
         HideAllButtons();
     }
 
-// Opens specific tabs and shows related prefab
+    // Opens specific tabs and shows related prefab
     public void OpenEnvironmentTab()
     {
         if (currentOpenTab == MainTab.Environment)
@@ -73,7 +73,7 @@ public class TabManager : MonoBehaviour
         ShowMainTab(MainTab.Utility);
     }
 
-// Environment tab specific method to show sub-tabs
+    // Environment tab specific method to show sub-tabs
     public void OpenEnvironmentGroup(EnvironmentGroup subTab)
     {
         foreach (var button in allButtons)
@@ -86,7 +86,7 @@ public class TabManager : MonoBehaviour
         }
     }
 
-// Environment sub-tabs
+    // Environment sub-tabs
     public void OpenEnvironmentTrees()
     {
         OpenEnvironmentGroup(EnvironmentGroup.Trees);
@@ -128,15 +128,6 @@ public class TabManager : MonoBehaviour
     {
         foreach (var button in allButtons)
             button.gameObject.SetActive(false);
-    }
-
-    void CloseContent()
-    {
-        currentOpenTab = null;
-
-        HideAllButtons();
-        environmentSubTabPanel.SetActive(false);
-        contentHolder.SetActive(false);
     }
 
     void CloseContentPanel()

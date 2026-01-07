@@ -1,7 +1,4 @@
-/*
-Stores which main tab and environment sub-tab
-this button belongs to.
-*/
+//Stores which main tab and environment sub-tab a button belongs to for content panel.
 using UnityEngine;
 
 public enum MainTab

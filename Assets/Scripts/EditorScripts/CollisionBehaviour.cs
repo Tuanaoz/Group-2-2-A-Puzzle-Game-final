@@ -63,6 +63,23 @@ public class CollisionBehaviour : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+// Check if player touched a door
+    Door door = other.GetComponent<Door>();
+    if (door != null)
+    {
+        if (door.IsOpen())
+        {
+// Door is open, level completed
+            levelCompleteUI.ShowLevelComplete();
+        }
+        else
+        {
+// Door is closed, game over
+            gameFailUI.ShowFail();
+        }
+        return;
+    }
+
         if (other.CompareTag("Acid") || other.CompareTag("Lava") || other.CompareTag("Spikes"))
         {
             Debug.Log("Game Over");

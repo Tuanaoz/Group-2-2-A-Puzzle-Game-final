@@ -7,7 +7,7 @@ public class CustomWorld : MonoBehaviour
 
     public void OnClick()
     {
-// If all main levels are NOT completed, show warning
+// If all main levels are not completed, show warning
         if (!ProgressManager.AllLevelsCompleted())
         {
             if (lockedPopup != null)
