@@ -8,6 +8,7 @@ public class CharacterMovement : MonoBehaviour
     public float speed = 5f;
     public bool movement = false;
     private Rigidbody rb;
+    public HoldPlayer holdPlayer;
 
     // Start is called before the first frame update
     void Start()
@@ -25,9 +26,15 @@ public class CharacterMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!movement) {
+        // Stop if movement is disabled
+        if (!movement)
             return;
-        }
+
+        // Stop if HoldPlayer locks movement
+        if (holdPlayer != null && !holdPlayer.canMove)
+            return;
+
+        // Move player forward
         rb.MovePosition(rb.position + transform.forward * speed * Time.deltaTime);
     }
 
@@ -47,5 +54,4 @@ public class CharacterMovement : MonoBehaviour
             rb.velocity = Vector3.zero;
         }
     }
-
 }

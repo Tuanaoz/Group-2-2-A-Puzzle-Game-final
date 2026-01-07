@@ -13,8 +13,14 @@ public class SaveLevelUI : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    public void OpenSaveUI() {
-        if (gridManager.isUIOpen()) {
+    public void OpenSaveUI()
+    {
+        if (gridManager.isUIOpen())
+            return;
+        if (gridManager.saveLoadManager != null &&
+            gridManager.saveLoadManager.IsEditingLoadedLevel())
+        {
+            gridManager.saveLoadManager.OpenOverwriteFromEdit();
             return;
         }
         gameObject.SetActive(true);

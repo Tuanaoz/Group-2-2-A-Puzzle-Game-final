@@ -55,7 +55,7 @@ public class SaveLoadManager : MonoBehaviour
     [Header("Level Settings")]
     public string saveFileName = "tempLevelData";
     private string levelFolder;
-
+    private string loadedLevelName = null;
 
     void Start()
     {
@@ -141,9 +141,16 @@ public class SaveLoadManager : MonoBehaviour
 
         overwriteLevelUI.CloseOverwriteUI();
         saveLevelUI.CloseSaveUI();
+        if (gridManager.isUIOpen())
+        {
+            gridManager.UIToggle();
+        }
     }
 
     public void LoadLevel(string levelName) {
+        loadedLevelName = levelName;
+        saveFileName = levelName;
+        levelNameInput.text = levelName;
         string filePath = levelFolder + "/" + levelName + ".json";
         if (!File.Exists(filePath)) return;
 
@@ -198,5 +205,25 @@ public class SaveLoadManager : MonoBehaviour
 
     public void updateLevelName() {
         saveFileName = levelNameInput.text;
+    }
+
+    public bool IsEditingLoadedLevel()
+    {
+        return !string.IsNullOrEmpty(loadedLevelName);
+    }
+
+    public void OpenOverwriteFromEdit()
+    {
+        overwriteLevelUI.OpenOverwriteUI();
+    }
+
+    public void OpenSaveAsNew()
+    {
+        loadedLevelName = null;
+        saveFileName = "";
+        levelNameInput.text = "";
+
+        saveLevelUI.gameObject.SetActive(true);
+        gridManager.UIToggle();
     }
 }

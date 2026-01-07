@@ -19,6 +19,7 @@ public class OverwriteLevelUI : MonoBehaviour
 
     public void CloseOverwriteUI() {
         gameObject.SetActive(false);
+        gridManager.saveLoadManager.saveLevelUI.gameObject.SetActive(true);
     }
 
     public void Overwrite() {
