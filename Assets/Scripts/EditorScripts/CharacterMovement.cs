@@ -54,4 +54,8 @@ public class CharacterMovement : MonoBehaviour
             rb.velocity = Vector3.zero;
         }
     }
+
+    public bool IsMoving() {
+        return movement;
+    }
 }

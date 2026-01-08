@@ -20,4 +20,9 @@ public class HoldPlayer : MonoBehaviour
         yield return new WaitForSeconds(duration);
         canMove = true;
     }
+
+    public bool IsHeld()
+    {
+        return !canMove;
+    }
 }

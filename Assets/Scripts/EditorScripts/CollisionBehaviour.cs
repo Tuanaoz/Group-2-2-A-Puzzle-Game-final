@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CollisionBehaviour : MonoBehaviour
 {
-    public LevelCompleteBehaviour levelCompleteUI;
+    private LevelCompleteBehaviour levelCompleteUI;
 
-    public GameFailBehaviour gameFailUI;
+    private GameFailBehaviour gameFailUI;
+
+    private GridManager gridManager;
 
     void Start()
     {
@@ -14,6 +17,8 @@ public class CollisionBehaviour : MonoBehaviour
 
         // Auto-find the LevelCompleteBehaviour in the scene
         levelCompleteUI = FindFirstObjectByType<LevelCompleteBehaviour>(FindObjectsInactive.Include);
+
+        gridManager = Object.FindFirstObjectByType<GridManager>();
 
         if (levelCompleteUI == null)
         {
@@ -29,6 +34,11 @@ public class CollisionBehaviour : MonoBehaviour
     private void OnCollisionEnter(Collision collision) {
         if (collision.gameObject.CompareTag("Enemy"))
         {
+            if (SceneManager.GetActiveScene().name == "LevelEditor")
+            {
+                gridManager.RespawnPlayer();
+                return;
+            }
             Debug.Log("Game Over");
             gameFailUI.ShowFail();
             return;
@@ -36,6 +46,11 @@ public class CollisionBehaviour : MonoBehaviour
 
         if (collision.gameObject.tag == "Rotatable")
         {
+            if (SceneManager.GetActiveScene().name == "LevelEditor")
+            {
+                gridManager.RespawnPlayer();
+                return;
+            }
             Debug.Log("Collision occurred with object");
             Debug.Log("Game Over");
             gameFailUI.ShowFail();
@@ -43,6 +58,11 @@ public class CollisionBehaviour : MonoBehaviour
         }
 
         if (collision.gameObject.tag == "Goal") {
+            if (SceneManager.GetActiveScene().name == "LevelEditor")
+            {
+                gridManager.RespawnPlayer();
+                return;
+            }
             levelCompleteUI.ShowLevelComplete();
         }
     }
@@ -70,11 +90,21 @@ public class CollisionBehaviour : MonoBehaviour
         if (door.IsOpen())
         {
 // Door is open, level completed
+            if (SceneManager.GetActiveScene().name == "LevelEditor")
+            {
+                gridManager.RespawnPlayer();
+                return;
+            }
             levelCompleteUI.ShowLevelComplete();
         }
         else
         {
 // Door is closed, game over
+            if (SceneManager.GetActiveScene().name == "LevelEditor")
+            {
+                gridManager.RespawnPlayer();
+                return;
+            }
             gameFailUI.ShowFail();
         }
         return;
@@ -82,6 +112,11 @@ public class CollisionBehaviour : MonoBehaviour
 
         if (other.CompareTag("Acid") || other.CompareTag("Lava") || other.CompareTag("Spikes"))
         {
+            if (SceneManager.GetActiveScene().name == "LevelEditor")
+            {
+                gridManager.RespawnPlayer();
+                return;
+            }
             Debug.Log("Game Over");
             gameFailUI.ShowFail();
             Destroy(this.gameObject);

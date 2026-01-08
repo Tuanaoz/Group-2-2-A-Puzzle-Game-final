@@ -9,6 +9,7 @@ public class EnemyMovement : MonoBehaviour
     public float EnemySpeed = 2f;
     public Vector3 ChangeDirection = Vector3.forward;
     public Vector3 startDirection;
+    private bool forward = false;
     void Start()
     {
         ChangeDirection = transform.forward.normalized;
@@ -23,6 +24,7 @@ public class EnemyMovement : MonoBehaviour
     void OnCollisionEnter(Collision col)
     {
         ChangeDirection = -ChangeDirection;
+        forward = !forward;
     }
     public void ChangeAxes()
     {
@@ -34,5 +36,10 @@ public class EnemyMovement : MonoBehaviour
     {
         ChangeDirection = Vector3.forward;
     }
+    }
+
+    public bool IsMovingForward()
+    {
+        return forward;
     }
 }
