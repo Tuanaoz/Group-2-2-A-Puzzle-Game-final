@@ -3326,7 +3326,6 @@ MonoBehaviour:
   overwriteLevelUI: {fileID: 331927733}
   saveLevelUI: {fileID: 1065626464}
   charCount: 0
-  charCount: 0
   saveFileName: tempLevel
 --- !u!4 &112243962
 Transform:
@@ -4323,6 +4322,7 @@ MonoBehaviour:
   levelComplete: 0
   saveLevelUI: {fileID: 0}
   mainCameraMovement: {fileID: 963194229}
+  charMoveManager: {fileID: 0}
 --- !u!1 &200552976
 GameObject:
   m_ObjectHideFlags: 0
@@ -21175,7 +21175,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5, y: 307.4998}
+  m_AnchoredPosition: {x: 5, y: 307.49994}
   m_SizeDelta: {x: 170, y: 2000}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1172882209
@@ -22054,9 +22054,9 @@ RectTransform:
   - {fileID: 1833443352}
   m_Father: {fileID: 431415998}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 73.75, y: -50}
   m_SizeDelta: {x: 55, y: 55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1224198543
@@ -24707,9 +24707,9 @@ RectTransform:
   - {fileID: 1929663133}
   m_Father: {fileID: 431415998}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 223.75, y: -50}
   m_SizeDelta: {x: 60, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1432461470
@@ -29064,8 +29064,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 811935975}
   m_HandleRect: {fileID: 811935974}
   m_Direction: 3
-  m_Value: 1.0000001
-  m_Size: 0.30700812
+  m_Value: 1
+  m_Size: 0.3075
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

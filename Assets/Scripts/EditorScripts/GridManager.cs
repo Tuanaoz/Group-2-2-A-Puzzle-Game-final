@@ -157,7 +157,7 @@ public class GridManager : MonoBehaviour
 
                 if (Physics.Raycast(ray, out hit)) {
                     Scene currentScene = SceneManager.GetActiveScene();
-                    if (hit.collider.gameObject.tag == "Direction" || ((hit.collider.gameObject.tag == "Player" || hit.collider.gameObject.tag == "Enemy" || hit.collider.gameObject.tag == "Rotatable" || hit.collider.gameObject.tag == "Goal" || hit.collider.gameObject.tag == "character2") && currentScene.name == "LevelEditor")) {
+                    if (hit.collider.gameObject.tag == "Direction" || ((hit.collider.gameObject.tag == "Player" || hit.collider.gameObject.tag == "Enemy" || hit.collider.gameObject.tag == "Rotatable" || hit.collider.gameObject.tag == "Goal" || hit.collider.gameObject.tag == "character2" || hit.collider.CompareTag("Environment") || hit.collider.CompareTag("Interactive")) && currentScene.name == "LevelEditor")) {
                         prefabUI = true;
                         currentPrefab = hit.collider.gameObject;
                         if (currentPrefab.GetComponent<Renderer>() == null) {

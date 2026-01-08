@@ -15,9 +15,9 @@ TagManager:
   - character2
   - Acid
   - Lava
-  - Switch
   - Spikes
-  - Hold
+  - Environment
+  - Interactive
   layers:
   - Default
   - TransparentFX

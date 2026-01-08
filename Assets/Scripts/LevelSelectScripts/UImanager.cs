@@ -7,6 +7,8 @@ public class UIManager : MonoBehaviour
 
     public GameObject settingsPanel;
     public GameObject levelSelectionPanel;
+    public GameObject popUpPanel;
+    public GameObject tutorialLevelSelectPanel;
 
     bool panelOpen = false;
 
@@ -20,7 +22,7 @@ public class UIManager : MonoBehaviour
                 OpenSettings();
         }
     }
-//Open
+//Open panel close other
     public void OpenSettings()
     {
         CloseAllPanels();
@@ -38,7 +40,17 @@ public class UIManager : MonoBehaviour
         levelLayer.SetActive(false);
         levelSelectionPanel.SetActive(true);
     }
-    //Close
+
+    public void OpenTutorialLevelSelect()
+    {
+        CloseAllPanels();
+
+        panelOpen = true;
+        levelLayer.SetActive(false);
+        tutorialLevelSelectPanel.SetActive(true);
+    }
+
+// Close the panel make level layer active
     public void CloseAllPanels()
     {
         panelOpen = false;
@@ -46,6 +58,8 @@ public class UIManager : MonoBehaviour
         settingsPanel.SetActive(false);
         levelSelectionPanel.SetActive(false);
         levelLayer.SetActive(true);
+        tutorialLevelSelectPanel.SetActive(false);
+        popUpPanel.SetActive(false);
     }
 //Scene Manager
     public void GoToMainMenu()
