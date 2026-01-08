@@ -11,7 +11,7 @@ public class CameraMovement : MonoBehaviour
     // public float speed = 10f;
     // public float rotationSpeed = 500f;
     float zoomSpeed = 500f;
-    bool movement;
+    public bool movement;
     private float minBoundX = -10f;
     private float maxBoundX = 10f;
     private float minBoundZ = -10f;

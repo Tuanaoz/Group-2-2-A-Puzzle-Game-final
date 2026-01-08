@@ -8,7 +8,7 @@ public class MainMenu : MonoBehaviour
     // Loads the level editor scene
     public void PlayGame()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(3);
     }
 
     public void LoadLevelEditor()

@@ -336,7 +336,15 @@ public class GridManager : MonoBehaviour
     }
 
     public void BackToMainMenu() {
+        LevelLoadRequest.RequestedLevelName = null;
+        Time.timeScale = 1f;
         SceneManager.LoadScene("MainMenu");
+    }
+
+    public void BackToLevelSelect() {
+        LevelLoadRequest.RequestedLevelName = null;
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("LevelSelection");
     }
 
     public void expandGround(string direction, GameObject parent) {

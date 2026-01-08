@@ -1,0 +1,305 @@
+{
+    "levelName": "Tutorial - 1",
+    "placedObjects": [
+        {
+            "prefabName": "Goal",
+            "position": {
+                "x": 3.0,
+                "y": 0.02500000037252903,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 0.0,
+                "y": 0.02500000037252903,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -4.0,
+                "y": 0.0,
+                "z": 4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -4.0,
+                "y": 0.0,
+                "z": -3.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -3.0,
+                "y": 0.0,
+                "z": -4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -4.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 3.0,
+                "y": 0.0,
+                "z": 4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 4.0,
+                "y": 0.0,
+                "z": -1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 2.0,
+                "y": 0.0,
+                "z": -4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -2.0,
+                "y": 0.0,
+                "z": -1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 2.0,
+                "y": 0.0,
+                "z": 3.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "rock_big_flat_mossy",
+            "position": {
+                "x": -2.0,
+                "y": 0.10000000149011612,
+                "z": -3.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "SP_Plant06",
+            "position": {
+                "x": -2.0,
+                "y": 0.02500000037252903,
+                "z": -4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "SP_Plant06",
+            "position": {
+                "x": -1.0,
+                "y": 0.02500000037252903,
+                "z": -3.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "bush_cluster_pink",
+            "position": {
+                "x": -2.0,
+                "y": 0.10000000149011612,
+                "z": 4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "mushroom_red_small",
+            "position": {
+                "x": -1.0,
+                "y": 0.10000000149011612,
+                "z": 4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "mushroom_purple_small",
+            "position": {
+                "x": -3.0,
+                "y": 0.10000000149011612,
+                "z": 3.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        }
+    ],
+    "characters": [
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.10000000149011612,
+                "z": -4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        }
+    ],
+    "grounPosition": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "groundScale": {
+        "x": 1.100000023841858,
+        "y": 1.0,
+        "z": 1.100000023841858
+    },
+    "groundThemeIndex": 1,
+    "northArrowsPosition": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "southArrowsPosition": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "eastArrowsPosition": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "westArrowsPosition": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "bonusCollectibleCount": 0,
+    "bonusCollected": 0
+}

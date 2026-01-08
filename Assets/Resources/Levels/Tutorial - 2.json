@@ -1,0 +1,347 @@
+{
+    "levelName": "Tutorial - 2",
+    "placedObjects": [
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -3.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 3.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -3.0,
+                "y": 0.0,
+                "z": -4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 4.0,
+                "y": 0.0,
+                "z": -4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 3.0,
+                "y": 0.0,
+                "z": 4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "rock_big_flat_mossy",
+            "position": {
+                "x": -3.0,
+                "y": 0.10000000149011612,
+                "z": -2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "rock_big_long",
+            "position": {
+                "x": -3.0,
+                "y": 0.10000000149011612,
+                "z": 3.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "plant_flower_rose",
+            "position": {
+                "x": -4.0,
+                "y": 0.10000000149011612,
+                "z": 2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "plant_moonspindle_small",
+            "position": {
+                "x": -5.0,
+                "y": 0.10000000149011612,
+                "z": 2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "plant_moonspindle_small",
+            "position": {
+                "x": -1.0,
+                "y": 0.10000000149011612,
+                "z": 3.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": -1.0,
+                "z": 0.0,
+                "w": 0.0
+            }
+        },
+        {
+            "prefabName": "bush_cluster_pink",
+            "position": {
+                "x": -3.0,
+                "y": 0.10000000149011612,
+                "z": 2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "bush_cluster_pink",
+            "position": {
+                "x": -2.0,
+                "y": 0.10000000149011612,
+                "z": 2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": -0.7071068286895752,
+                "z": 0.0,
+                "w": 0.7071068286895752
+            }
+        },
+        {
+            "prefabName": "Enemy",
+            "position": {
+                "x": -1.72846257686615,
+                "y": 0.004467874765396118,
+                "z": 0.025570977479219438
+            },
+            "rotation": {
+                "x": -0.0000021049054339528085,
+                "y": -0.707085371017456,
+                "z": -0.000007647086022188887,
+                "w": -0.7071282863616943
+            }
+        },
+        {
+            "prefabName": "Goal",
+            "position": {
+                "x": 0.0,
+                "y": 0.02500000037252903,
+                "z": 2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "tree_oak_green",
+            "position": {
+                "x": 3.0,
+                "y": 0.02500000037252903,
+                "z": -5.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "SP_Plant06",
+            "position": {
+                "x": -1.0,
+                "y": 0.02500000037252903,
+                "z": 2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "SP_Plant06",
+            "position": {
+                "x": -1.0,
+                "y": 0.02500000037252903,
+                "z": 4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.7071068286895752,
+                "z": 0.0,
+                "w": 0.7071068286895752
+            }
+        },
+        {
+            "prefabName": "tree_beech_green",
+            "position": {
+                "x": -4.0,
+                "y": 0.02500000037252903,
+                "z": -5.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "tree_beech_green",
+            "position": {
+                "x": 1.0,
+                "y": 0.02500000037252903,
+                "z": 3.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "plant_flower_crystalbud",
+            "position": {
+                "x": -2.0,
+                "y": 0.02500000037252903,
+                "z": 4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "tree_beech_green",
+            "position": {
+                "x": 4.0,
+                "y": 0.02500000037252903,
+                "z": -1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        }
+    ],
+    "characters": [
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.10000000149011612,
+                "z": -4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        }
+    ],
+    "grounPosition": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "groundScale": {
+        "x": 1.100000023841858,
+        "y": 1.0,
+        "z": 1.100000023841858
+    },
+    "groundThemeIndex": 1,
+    "northArrowsPosition": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "southArrowsPosition": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "eastArrowsPosition": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "westArrowsPosition": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "bonusCollectibleCount": 0,
+    "bonusCollected": 0
+}

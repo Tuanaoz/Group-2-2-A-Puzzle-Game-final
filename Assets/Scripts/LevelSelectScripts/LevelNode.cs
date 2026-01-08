@@ -34,8 +34,16 @@ public class LevelNode : MonoBehaviour
 
         string levelName;
 
+        if (levelIndex == 0)
+        {
+            levelName = "Tutorial - 1";
+        }
+        else if (levelIndex == 1)
+        {
+            levelName = "Tutorial - 2";
+        }
 // First level uses the temp level data
-        if (levelIndex == 1)
+        else if (levelIndex == 2)
         {
             levelName = "tempLevelData";
         }

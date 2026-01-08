@@ -77,8 +77,9 @@ public class SaveLoadManager : MonoBehaviour
         if (currentScene.name == "PlayLevel" &&
             !string.IsNullOrEmpty(LevelLoadRequest.RequestedLevelName))
         {
+            Debug.Log("Loading requested level: " + LevelLoadRequest.RequestedLevelName);
             LoadLevelFromResources(LevelLoadRequest.RequestedLevelName);
-            LevelLoadRequest.RequestedLevelName = null;
+            // LevelLoadRequest.RequestedLevelName = null;
             return;
         }
         if (currentScene.name=="LevelEditor" && gridManager != null) {
@@ -150,7 +151,7 @@ public class SaveLoadManager : MonoBehaviour
 
             String prefabName = child.gameObject.name.Replace("(Clone)", "").Trim();
 
-            if (prefabName == "Character") {
+            if (prefabName.Contains("Character")) {
                 CharacterData charData = new CharacterData(
                     gridManager.getPlayerSpawnPosition(charCount),
                     gridManager.getPlayerSpawnRotation(charCount)
@@ -226,7 +227,7 @@ public class SaveLoadManager : MonoBehaviour
             }
 
         foreach (CharacterData charData in levelData.characters) {
-            GameObject prefab = Array.Find(placeablePrefabs, p => p.name == "Character");
+            GameObject prefab = Array.Find(placeablePrefabs, p => p.name.Contains("Character"));
             if (prefab != null) {
                 Instantiate(prefab, charData.position, charData.rotation, placementContainer);
                 gridManager.addCharacterStartPosition(charData.position);
