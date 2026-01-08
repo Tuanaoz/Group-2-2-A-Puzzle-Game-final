@@ -18,6 +18,7 @@ TagManager:
   - Spikes
   - Environment
   - Interactive
+  - Switch
   layers:
   - Default
   - TransparentFX

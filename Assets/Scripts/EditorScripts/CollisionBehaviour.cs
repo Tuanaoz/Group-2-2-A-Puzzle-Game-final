@@ -78,6 +78,23 @@ public class CollisionBehaviour : MonoBehaviour
             }
         } else if (other.gameObject.tag == "Goal") {
             levelCompleteUI.ShowLevelComplete();
+        } else if (other.gameObject.tag == "Switch") {
+            Switch switchScript = other.GetComponent<Switch>();
+            if (switchScript != null) {
+                switchScript.SetPressed();
+            }
+        } else if (other.gameObject.tag == "Spikes") {
+            SpikeBehaviour spikeBehaviour = other.GetComponent<SpikeBehaviour>();
+            if (spikeBehaviour != null && spikeBehaviour.IsOn()) {
+                if (SceneManager.GetActiveScene().name == "LevelEditor") {
+                    gridManager.RespawnPlayer();
+                    return;
+                }
+                Debug.Log("Game Over");
+                gameFailUI.ShowFail();
+                Destroy(this.gameObject);
+                return;
+            }
         }
     }
 
@@ -110,7 +127,21 @@ public class CollisionBehaviour : MonoBehaviour
         return;
     }
 
-        if (other.CompareTag("Acid") || other.CompareTag("Lava") || other.CompareTag("Spikes"))
+    if (other.gameObject.tag == "Spikes") {
+        SpikeBehaviour spikeBehaviour = other.GetComponent<SpikeBehaviour>();
+        if (spikeBehaviour != null && spikeBehaviour.IsOn()) {
+            if (SceneManager.GetActiveScene().name == "LevelEditor") {
+                gridManager.RespawnPlayer();
+                return;
+            }
+            Debug.Log("Game Over");
+            gameFailUI.ShowFail();
+            Destroy(this.gameObject);
+            return;
+        }
+    }
+
+        if (other.CompareTag("Acid") || other.CompareTag("Lava"))
         {
             if (SceneManager.GetActiveScene().name == "LevelEditor")
             {

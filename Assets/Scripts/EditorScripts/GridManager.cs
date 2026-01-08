@@ -41,6 +41,7 @@ public class GridManager : MonoBehaviour
     private Quaternion checkpointRotation;
     private bool checkpointReached = false;
     public CharMoveManager charMoveManager;
+    private bool connectingSwitchToDoor = false;
 
     public Vector3 GridToWorld(Vector3Int gridPos)
     {
@@ -84,7 +85,22 @@ public class GridManager : MonoBehaviour
 
     void Update()
     {
-        if (placement) {
+        if (connectingSwitchToDoor) {
+            if (Input.GetMouseButtonDown(1)) {
+                connectingSwitchToDoor = false;
+            } else if (Input.GetMouseButtonDown(0)) {
+                Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
+                RaycastHit hit;
+
+                if (Physics.Raycast(ray, out hit)) {
+                    Door door = hit.collider.gameObject.GetComponent<Door>();
+                    if (door != null) {
+                        prefabOptionsMenu.connectSwitchToDoor(door);
+                        connectingSwitchToDoor = false;
+                    }
+                }
+            }
+        } else if (placement) {
             if (UI) {
                 placement = false;
                 prefabToPlace = null;
@@ -157,7 +173,7 @@ public class GridManager : MonoBehaviour
 
                 if (Physics.Raycast(ray, out hit)) {
                     Scene currentScene = SceneManager.GetActiveScene();
-                    if (hit.collider.gameObject.tag == "Direction" || ((hit.collider.gameObject.tag == "Player" || hit.collider.gameObject.tag == "Enemy" || hit.collider.gameObject.tag == "Rotatable" || hit.collider.gameObject.tag == "Goal" || hit.collider.gameObject.tag == "character2" || hit.collider.CompareTag("Environment") || hit.collider.CompareTag("Interactive")) && currentScene.name == "LevelEditor")) {
+                    if (hit.collider.gameObject.tag == "Direction" || ((hit.collider.gameObject.tag == "Player" || hit.collider.gameObject.tag == "Spikes" || hit.collider.gameObject.tag == "Enemy" || hit.collider.gameObject.tag == "Rotatable" || hit.collider.gameObject.tag == "Goal" || hit.collider.gameObject.tag == "character2" || hit.collider.CompareTag("Environment") || hit.collider.CompareTag("Interactive") || hit.collider.CompareTag("Switch")) && currentScene.name == "LevelEditor")) {
                         prefabUI = true;
                         currentPrefab = hit.collider.gameObject;
                         if (currentPrefab.GetComponent<Renderer>() == null) {
@@ -584,7 +600,7 @@ public class GridManager : MonoBehaviour
             checkpointReached = false;
         }
         
-        public Switch GetSwitchAtWorld(Vector3 worldPos)
+    public Switch GetSwitchAtWorld(Vector3 worldPos)
     {
         foreach (var sw in Object.FindObjectsByType<Switch>(FindObjectsSortMode.None))
         {
@@ -594,6 +610,14 @@ public class GridManager : MonoBehaviour
             }
         }
         return null;
+    }
+
+    public void SetConnectingSwitchToDoorMode()
+    {
+        connectingSwitchToDoor = true;
+        prefabUI = false;
+        updatePrefabColor(currentPrefab, originalColor);
+        prefabOptionsMenu.CloseMenu();
     }
 
 }
