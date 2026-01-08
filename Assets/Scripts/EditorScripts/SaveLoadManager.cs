@@ -74,6 +74,13 @@ public class SaveLoadManager : MonoBehaviour
     void Start()
     {
         Scene currentScene = SceneManager.GetActiveScene();
+        if (currentScene.name == "PlayLevel" &&
+            !string.IsNullOrEmpty(LevelLoadRequest.RequestedLevelName))
+        {
+            LoadLevelFromResources(LevelLoadRequest.RequestedLevelName);
+            LevelLoadRequest.RequestedLevelName = null;
+            return;
+        }
         if (currentScene.name=="LevelEditor" && gridManager != null) {
                     gridManager.UIToggle();
         }
@@ -97,7 +104,7 @@ public class SaveLoadManager : MonoBehaviour
 
                 btn.onClick.AddListener(() => LoadLevelFromResources(level.name));
             }
-        } 
+        }
         else if (currentScene.name == "LevelEditor") {
             string[] levels = Directory.GetFiles(levelFolder, "*.json");
             foreach (string level in levels) {

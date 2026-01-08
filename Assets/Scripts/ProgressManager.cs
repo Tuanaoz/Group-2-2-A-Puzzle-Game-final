@@ -5,7 +5,7 @@ public static class ProgressManager
     private const string LEVEL_KEY = "HighestUnlockedLevel";
     public static int TotalMainLevels = 7;
 
-//Max level the player reached
+    //Max level the player reached
     public static int HighestUnlockedLevel
     {
         get
@@ -14,7 +14,6 @@ public static class ProgressManager
             {
                 PlayerPrefs.SetInt(LEVEL_KEY, 1);
             }
-
             return PlayerPrefs.GetInt(LEVEL_KEY);
         }
         set
@@ -23,7 +22,8 @@ public static class ProgressManager
             PlayerPrefs.Save();
         }
     }
-//called when a level is completed
+
+    //called when a level is completed
     public static void CompleteLevel(int currentLevelIndex)
     {
         if (HighestUnlockedLevel == currentLevelIndex)
@@ -32,7 +32,7 @@ public static class ProgressManager
         }
     }
 
-//checks if all levels are completed
+    //checks if all levels are completed
     public static bool AllLevelsCompleted()
     {
         return HighestUnlockedLevel > TotalMainLevels;
@@ -42,5 +42,6 @@ public static class ProgressManager
     public static void ResetProgress()
     {
         PlayerPrefs.DeleteKey(LEVEL_KEY);
+        PlayerPrefs.Save();
     }
 }
