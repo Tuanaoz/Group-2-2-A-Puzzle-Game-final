@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7156953157372070660}
   - component: {fileID: 6407663023585247343}
   - component: {fileID: 5601770908491594274}
-  - component: {fileID: 3323061488980519608}
+  - component: {fileID: -2458631431291847090}
   m_Layer: 0
   m_Name: Hold Tile
   m_TagString: Interactive
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   holdDuration: 2
---- !u!114 &3323061488980519608
+--- !u!114 &-2458631431291847090
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -132,4 +132,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6b30f9725057384a867f8a3ae62c9d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetY: 0.1
+  offsetY: 0.2
