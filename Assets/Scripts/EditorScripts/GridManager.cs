@@ -38,7 +38,9 @@ public class GridManager : MonoBehaviour
     private bool characterReached = false;
     private bool character2Reached = false;
     private Vector3 checkpointPosition;
+    private Quaternion checkpointRotation;
     private bool checkpointReached = false;
+    public CharMoveManager charMoveManager;
 
     public Vector3 GridToWorld(Vector3Int gridPos)
     {
@@ -155,7 +157,7 @@ public class GridManager : MonoBehaviour
 
                 if (Physics.Raycast(ray, out hit)) {
                     Scene currentScene = SceneManager.GetActiveScene();
-                    if (hit.collider.gameObject.tag == "Rotatable" || hit.collider.gameObject.tag == "Direction" || hit.collider.gameObject.tag == "Goal" || hit.collider.gameObject.tag == "character2" || ((hit.collider.gameObject.tag == "Player" || hit.collider.gameObject.tag == "Enemy") && currentScene.name == "LevelEditor")) {
+                    if (hit.collider.gameObject.tag == "Direction" || ((hit.collider.gameObject.tag == "Player" || hit.collider.gameObject.tag == "Enemy" || hit.collider.gameObject.tag == "Rotatable" || hit.collider.gameObject.tag == "Goal" || hit.collider.gameObject.tag == "character2") && currentScene.name == "LevelEditor")) {
                         prefabUI = true;
                         currentPrefab = hit.collider.gameObject;
                         if (currentPrefab.GetComponent<Renderer>() == null) {
@@ -315,11 +317,22 @@ public class GridManager : MonoBehaviour
     }
 
     public void RespawnPlayer() {
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
-        if (player != null) {
-            player.transform.position = playerStartPosition;
-            player.transform.rotation = playerStartRotation;
+        int charIndex = 0;
+
+        foreach (Transform child in placementContainer) {
+            if (child.gameObject.name.Contains("Character")) {
+                if (checkpointReached) {
+                    child.position = checkpointPosition;
+                    child.rotation = checkpointRotation;
+                } else if (charIndex < characterStartPositions.Count) {
+                    child.position = characterStartPositions[charIndex];
+                    child.rotation = characterStartRotations[charIndex];
+                }
+                charIndex++;
+            }
         }
+
+        charMoveManager.PauseCharMovement();
     }
 
     public void BackToMainMenu() {
@@ -533,6 +546,8 @@ public class GridManager : MonoBehaviour
     
     public void TriggerCheckpoint(Vector3 position) {
         checkpointPosition = position;
+        checkpointRotation = Quaternion.identity;
+        
         checkpointReached = true;
 
         mainCameraMovement.StartMovement();

@@ -1780,7 +1780,7 @@
             }
         },
         {
-            "prefabName": "Character",
+            "prefabName": "Character_Cat",
             "position": {
                 "x": 2.0,
                 "y": 0.15000152587890626,
