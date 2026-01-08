@@ -88,7 +88,7 @@ public class CameraMovement : MonoBehaviour
 
         if (newPosition.y < 3f) {
             transform.position = new Vector3(transform.position.x, 3f, transform.position.z);
-           return;
+        return;
         } else if (newPosition.y > 20f) {
             transform.position = new Vector3(transform.position.x, 20f, transform.position.z);
             return;
