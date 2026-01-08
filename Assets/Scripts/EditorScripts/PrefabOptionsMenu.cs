@@ -18,6 +18,12 @@ public class PrefabOptionsMenu : MonoBehaviour
         targetPrefab = prefab;
         transform.position = Input.mousePosition;
         gameObject.SetActive(true);
+        if (targetPrefab.tag == "Switch") {
+            // Show connect to door option
+            transform.GetChild(2).gameObject.SetActive(true);
+        } else {
+            transform.GetChild(2).gameObject.SetActive(false);
+        }
     }
 
     public void CloseMenu() {
@@ -52,6 +58,18 @@ public class PrefabOptionsMenu : MonoBehaviour
         {
             targetPrefab.transform.Rotate(0, 90f, 0);
         }
+    }
+
+    public void connectSwitchToDoor(Door door)
+    {
+        if (targetPrefab == null)
+            return;
+        Switch sw = targetPrefab.GetComponent<Switch>();
+        if (sw != null)
+        {
+            sw.connectedToDoor = door;
+        }
+        CloseMenu();
     }
 
 }
