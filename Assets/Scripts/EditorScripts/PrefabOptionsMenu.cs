@@ -18,12 +18,6 @@ public class PrefabOptionsMenu : MonoBehaviour
         targetPrefab = prefab;
         transform.position = Input.mousePosition;
         gameObject.SetActive(true);
-        if (targetPrefab.tag == "Switch") {
-            // Show connect to door option
-            transform.GetChild(2).gameObject.SetActive(true);
-        } else {
-            transform.GetChild(2).gameObject.SetActive(false);
-        }
     }
 
     public void CloseMenu() {

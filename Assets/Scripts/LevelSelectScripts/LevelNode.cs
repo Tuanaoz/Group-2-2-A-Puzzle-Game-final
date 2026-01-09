@@ -12,50 +12,51 @@ public class LevelNode : MonoBehaviour
 
     void Start()
     {
-// Check if this level is unlocked based on player progress
-        bool unlocked = levelIndex <= ProgressManager.HighestUnlockedLevel;
-// Enable or disable button interaction
+        bool unlocked;
+
+// Tutorials always open, no progress check
+        if (levelIndex < 3)
+        {
+            unlocked = true;
+
+            if (lockIcon != null)
+                lockIcon.SetActive(false);
+            if (UnlockedIcon != null)
+                UnlockedIcon.SetActive(false);
+        }
+        else
+        {
+// Main levels start from index 3
+            unlocked = (levelIndex - 3) <= ProgressManager.HighestUnlockedLevel;
+
+            if (lockIcon != null)
+                lockIcon.SetActive(!unlocked);
+            if (UnlockedIcon != null)
+                UnlockedIcon.SetActive(unlocked);
+        }
+
         levelButton.interactable = unlocked;
-
-//Shows locked or unlocked icon based on highest level completed
-        if (lockIcon != null)
-            lockIcon.SetActive(!unlocked);
-        if (UnlockedIcon != null)
-            UnlockedIcon.SetActive(unlocked);
-
         levelButton.onClick.AddListener(OnClick);
     }
 
     void OnClick()
     {
-// Do nothing if the level is locked
         if (!levelButton.interactable)
             return;
 
         string levelName;
 
         if (levelIndex == 0)
-        {
             levelName = "Tutorial - 1";
-        }
         else if (levelIndex == 1)
-        {
             levelName = "Tutorial - 2";
-        }
         else if (levelIndex == 2)
-        {
             levelName = "Tutorial - 3";
-        }
-// First level uses the temp level data
         else if (levelIndex == 3)
-        {
             levelName = "tempLevelData";
-        }
         else
-        {
-// Load core levels based on their index
             levelName = "Level_0" + levelIndex;
-        }
+
         LevelLoadRequest.RequestedLevelName = levelName;
         SceneManager.LoadScene("PlayLevel");
     }

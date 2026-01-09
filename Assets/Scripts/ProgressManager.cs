@@ -3,16 +3,16 @@ using UnityEngine;
 public static class ProgressManager
 {
     private const string LEVEL_KEY = "HighestUnlockedLevel";
-    public static int TotalMainLevels = 7;
+    public static int TotalMainLevels = 0;
 
-    //Max level the player reached
+//Max level the player reached
     public static int HighestUnlockedLevel
     {
         get
         {
             if (!PlayerPrefs.HasKey(LEVEL_KEY))
             {
-                PlayerPrefs.SetInt(LEVEL_KEY, 1);
+                PlayerPrefs.SetInt(LEVEL_KEY, 3);
             }
             return PlayerPrefs.GetInt(LEVEL_KEY);
         }
@@ -23,7 +23,7 @@ public static class ProgressManager
         }
     }
 
-    //called when a level is completed
+//called when a level is completed
     public static void CompleteLevel(int currentLevelIndex)
     {
         if (HighestUnlockedLevel == currentLevelIndex)
@@ -32,13 +32,13 @@ public static class ProgressManager
         }
     }
 
-    //checks if all levels are completed
+//checks if all levels are completed
     public static bool AllLevelsCompleted()
     {
         return HighestUnlockedLevel > TotalMainLevels;
     }
 
-    // Debug
+// Debug
     public static void ResetProgress()
     {
         PlayerPrefs.DeleteKey(LEVEL_KEY);
