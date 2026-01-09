@@ -10,8 +10,7 @@ public class CustomWorld : MonoBehaviour
 // If all main levels are not completed, show warning
         if (!ProgressManager.AllLevelsCompleted())
         {
-            Debug.Log("All main levels not completed. Cannot access custom world.");
-            if (lockedPopup != null) {
+          if (lockedPopup != null) {
                 lockedPopup.Show();
             }
 

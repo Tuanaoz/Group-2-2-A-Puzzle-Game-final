@@ -3,7 +3,7 @@ using UnityEngine;
 public static class ProgressManager
 {
     private const string LEVEL_KEY = "HighestUnlockedLevel";
-    public static int TotalMainLevels = 0;
+    public static int TotalMainLevels = 7;
 
 //Max level the player reached
     public static int HighestUnlockedLevel

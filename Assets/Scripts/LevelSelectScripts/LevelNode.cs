@@ -26,9 +26,7 @@ public class LevelNode : MonoBehaviour
         }
         else
         {
-// Main levels start from index 3
-            unlocked = (levelIndex - 3) <= ProgressManager.HighestUnlockedLevel;
-
+            unlocked = levelIndex <= ProgressManager.HighestUnlockedLevel;
             if (lockIcon != null)
                 lockIcon.SetActive(!unlocked);
             if (UnlockedIcon != null)
