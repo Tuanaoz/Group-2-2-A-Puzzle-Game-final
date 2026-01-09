@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using UnityEngine;
 using System;
 using System.IO;
@@ -64,7 +65,13 @@ public class SaveLoadManager : MonoBehaviour
     public OverwriteLevelUI overwriteLevelUI;
     public SaveLevelUI saveLevelUI;
 
-    public int charCount;
+    public Button New_Button;
+    public Button Share_Button;
+
+    public TMP_InputField pasteLevelInputField;
+
+    private int charCount;
+    private bool share = false;
 
     [Header("Level Settings")]
     public string saveFileName = "tempLevelData";
@@ -78,35 +85,23 @@ public class SaveLoadManager : MonoBehaviour
             !string.IsNullOrEmpty(LevelLoadRequest.RequestedLevelName))
         {
             Debug.Log("Loading requested level: " + LevelLoadRequest.RequestedLevelName);
-            LoadLevelFromResources(LevelLoadRequest.RequestedLevelName);
+            if (LevelLoadRequest.IsCustomLevel) {
+                Debug.Log("Loading custom level: " + LevelLoadRequest.RequestedLevelName);
+                LoadCustomLevel(LevelLoadRequest.RequestedLevelName);
+            } else {
+                LoadLevelFromResources(LevelLoadRequest.RequestedLevelName);
+            }
             // LevelLoadRequest.RequestedLevelName = null;
             return;
         }
         if (currentScene.name=="LevelEditor" && gridManager != null) {
                     gridManager.UIToggle();
         }
-        levelFolder = Application.dataPath + "/CreatedLevels/";
+        levelFolder = Application.persistentDataPath + "/CreatedLevels/";
         if (!Directory.Exists(levelFolder)) {
             Directory.CreateDirectory(levelFolder);
         }
-        if (currentScene.name == "PlayLevel") {
-            TextAsset[] levels = Resources.LoadAll<TextAsset>("Levels");
-            for(int i = 0; i < levels.Length; i++)
-            {
-                int levelID = i + 1;
-                TextAsset level = levels[i];
-
-                Debug.Log("Found level in Resources: " + level.name);
-                GameObject prefab = Array.Find(placeablePrefabs, p => p.name == "Level_Button");
-                GameObject btnObj = Instantiate(prefab, levelPanel);
-                Button btn = btnObj.GetComponent<Button>();
-
-                btn.GetComponentInChildren<TMP_Text>().text = "Level " + levelID;
-
-                btn.onClick.AddListener(() => LoadLevelFromResources(level.name));
-            }
-        }
-        else if (currentScene.name == "LevelEditor") {
+        if (currentScene.name == "LevelEditor") {
             string[] levels = Directory.GetFiles(levelFolder, "*.json");
             foreach (string level in levels) {
                 string levelName = Path.GetFileNameWithoutExtension(level);
@@ -116,12 +111,46 @@ public class SaveLoadManager : MonoBehaviour
                 Button btn = btnObj.GetComponent<Button>();
                 btn.GetComponentInChildren<TMP_Text>().text = levelName;
                 btn.onClick.AddListener(() => LoadLevel(levelName));
+                btn.onClick.AddListener(() => CopyLevelToClipboard(levelName));
             }
+        } else if (currentScene.name == "LevelSelection") {
+            PopulateCustomLevelPanel();
         }
     }
 
+    public void PopulateCustomLevelPanel() {
+        string customLevelFolder = Application.persistentDataPath + "/Custom/";
+
+        if (!Directory.Exists(customLevelFolder)) {
+            Directory.CreateDirectory(customLevelFolder);
+        }
+
+        string[] levels = Directory.GetFiles(customLevelFolder, "*.json");
+        
+        for(int i = 0; i < levels.Length; i++)
+        {
+            string levelPath = levels[i];
+            string levelName = Path.GetFileNameWithoutExtension(levelPath);
+
+            Debug.Log("Found level in Custom: " + levelName);
+            GameObject prefab = Array.Find(placeablePrefabs, p => p.name == "Level_Button");
+            GameObject btnObj = Instantiate(prefab, levelPanel);
+            Button btn = btnObj.GetComponent<Button>();
+
+            btn.GetComponentInChildren<TMP_Text>().text = levelName;
+
+            btn.onClick.AddListener(() => PlayCustomLevel(levelName));
+        }
+    }
+
+    public void PlayCustomLevel(string levelName) {
+        LevelLoadRequest.RequestedLevelName = levelName;
+        LevelLoadRequest.IsCustomLevel = true;
+        SceneManager.LoadScene("PlayLevel");
+    }
+
     public void LevelAlreadyExists() {
-        levelFolder = Application.dataPath + "/CreatedLevels/";
+        levelFolder = Application.persistentDataPath + "/CreatedLevels/";
         if (!Directory.Exists(levelFolder)) {
             Directory.CreateDirectory(levelFolder);
         }
@@ -172,6 +201,8 @@ public class SaveLoadManager : MonoBehaviour
         string json = JsonUtility.ToJson(levelData, true);
         File.WriteAllText(levelFolder + saveFileName + ".json", json);
 
+        WebGLFileSystem.Sync();
+
         overwriteLevelUI.CloseOverwriteUI();
         saveLevelUI.CloseSaveUI();
         if (gridManager.isUIOpen())
@@ -181,6 +212,10 @@ public class SaveLoadManager : MonoBehaviour
     }
 
     public void LoadLevel(string levelName) {
+
+        if (share)
+            return;
+
         loadedLevelName = levelName;
         saveFileName = levelName;
         levelNameInput.text = levelName;
@@ -200,10 +235,21 @@ public class SaveLoadManager : MonoBehaviour
         LoadLevelFromData(levelData);
     }
 
+    public void LoadCustomLevel(string levelName) {
+        string levelFilePath = Application.persistentDataPath + "/Custom/" + levelName + ".json";
+        if (!File.Exists(levelFilePath)) {
+            Debug.LogError("Custom level file not found: " + levelFilePath);
+            return;
+        }
+
+        string json = File.ReadAllText(levelFilePath);
+        LevelData levelData = JsonUtility.FromJson<LevelData>(json);
+        LoadLevelFromData(levelData); 
+    }
+
     private void LoadLevelFromData(LevelData levelData) {
         foreach (Transform child in placementContainer) {
             Destroy(child.gameObject);
-        
         }
 
         if (SceneManager.GetActiveScene().name == "LevelEditor") {
@@ -274,5 +320,81 @@ public class SaveLoadManager : MonoBehaviour
 
         saveLevelUI.gameObject.SetActive(true);
         gridManager.UIToggle();
+    }
+
+    public void ToggleShareMode() {
+        share = !share;
+    }
+
+    public void CopyLevelToClipboard(string levelName)
+    {
+
+        if (!share)
+            return;
+
+        string filePath = levelFolder + "/" + levelName + ".json";
+        if (!File.Exists(filePath)) return;
+
+        string json = File.ReadAllText(filePath);
+        string minifyedJson = Regex.Replace(json, @"\s+", "");
+
+        GUIUtility.systemCopyBuffer = minifyedJson;
+        Debug.Log("Level data copied to clipboard for level: " + levelName);
+
+        ToggleShareMode();
+        New_Button.gameObject.SetActive(true);
+        Share_Button.gameObject.SetActive(true);
+    }
+
+    private void SaveCustomLevel(LevelData levelData) {
+        string folderPath = Application.persistentDataPath + "/Custom/";
+
+        if (!Directory.Exists(folderPath)) {
+            Directory.CreateDirectory(folderPath);
+        }
+
+        string fileName = levelData.levelName;
+        if (string.IsNullOrEmpty(fileName)) {
+            fileName = "CustomLevel_" + DateTime.Now.ToString("yyyyMMdd_HHmmss");
+        }
+
+        string filePath = folderPath + fileName + ".json";
+
+        if (File.Exists(filePath)) {
+            Debug.LogWarning("Custom level already exists: " + fileName);
+            return;
+        }
+
+        string json = JsonUtility.ToJson(levelData, true);
+        File.WriteAllText(filePath, json);
+        Debug.Log("Custom level saved: " + fileName);
+
+    }
+
+    public void LoadLevelFromJson() {
+        string json = pasteLevelInputField.text;
+        if (string.IsNullOrEmpty(json)) {
+            Debug.LogWarning("No level data provided in input field.");
+            return;
+        }
+
+        LevelData levelData;
+        try {
+            levelData = JsonUtility.FromJson<LevelData>(json);
+        } catch (Exception e) {
+            Debug.LogError("Failed to parse level data from json: " + e.Message);
+            return;
+        }
+
+        if (levelData == null) {
+            Debug.LogError("Parsed level data is null.");
+            return;
+        }
+
+        SaveCustomLevel(levelData);
+
+        LevelLoadRequest.RequestedLevelName = levelData.levelName;
+        LevelLoadRequest.IsCustomLevel = true;
+        SceneManager.LoadScene("PlayLevel");
     }
 }

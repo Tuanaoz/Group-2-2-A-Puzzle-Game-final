@@ -353,12 +353,14 @@ public class GridManager : MonoBehaviour
 
     public void BackToMainMenu() {
         LevelLoadRequest.RequestedLevelName = null;
+        LevelLoadRequest.IsCustomLevel = false;
         Time.timeScale = 1f;
         SceneManager.LoadScene("MainMenu");
     }
 
     public void BackToLevelSelect() {
         LevelLoadRequest.RequestedLevelName = null;
+        LevelLoadRequest.IsCustomLevel = false;
         Time.timeScale = 1f;
         SceneManager.LoadScene("LevelSelection");
     }
