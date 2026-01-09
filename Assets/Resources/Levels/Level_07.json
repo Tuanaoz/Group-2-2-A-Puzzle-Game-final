@@ -3194,7 +3194,7 @@
             }
         },
         {
-            "prefabName": "Hold Tile",
+            "prefabName": "Hold_Tile",
             "position": {
                 "x": -3.0,
                 "y": 0.20000000298023225,

@@ -5238,7 +5238,7 @@
             }
         },
         {
-            "prefabName": "Hold Tile",
+            "prefabName": "Hold_Tile",
             "position": {
                 "x": 14.0,
                 "y": 0.20000000298023225,
@@ -8190,9 +8190,10 @@
                 "z": 0.0,
                 "w": 1.0
             }
-        },
+        }
+    ],
+    "characters": [
         {
-            "prefabName": "Character_Cat",
             "position": {
                 "x": 20.0,
                 "y": 0.09999999403953552,
@@ -8206,7 +8207,6 @@
             }
         },
         {
-            "prefabName": "Character_Cat",
             "position": {
                 "x": 0.0,
                 "y": 0.09999999403953552,
@@ -8220,7 +8220,6 @@
             }
         }
     ],
-    "characters": [],
     "grounPosition": {
         "x": 7.0,
         "y": 0.0,

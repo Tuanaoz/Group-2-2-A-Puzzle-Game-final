@@ -99,7 +99,7 @@ public class SaveLoadManager : MonoBehaviour
             return;
         }
         if (currentScene.name=="LevelEditor" && gridManager != null) {
-                    gridManager.UIToggle();
+            gridManager.UIToggle();
         }
         levelFolder = Application.persistentDataPath + "/CreatedLevels/";
         if (!Directory.Exists(levelFolder)) {

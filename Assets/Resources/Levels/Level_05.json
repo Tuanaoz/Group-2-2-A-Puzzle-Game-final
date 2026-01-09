@@ -2,20 +2,6 @@
     "levelName": "Level4",
     "placedObjects": [
         {
-            "prefabName": "Character_Cat",
-            "position": {
-                "x": 3.0,
-                "y": 0.09999999403953552,
-                "z": 9.0
-            },
-            "rotation": {
-                "x": 0.0,
-                "y": 0.7071068286895752,
-                "z": 0.0,
-                "w": 0.7071068286895752
-            }
-        },
-        {
             "prefabName": "Wall",
             "position": {
                 "x": -5.0,
@@ -2382,7 +2368,7 @@
             }
         },
         {
-            "prefabName": "Hold Tile",
+            "prefabName": "Hold_Tile",
             "position": {
                 "x": 5.0,
                 "y": 0.20000000298023225,
@@ -2396,7 +2382,7 @@
             }
         },
         {
-            "prefabName": "Hold Tile",
+            "prefabName": "Hold_Tile",
             "position": {
                 "x": 19.0,
                 "y": 0.20000000298023225,
@@ -6652,7 +6638,21 @@
             }
         }
     ],
-    "characters": [],
+    "characters": [
+        {
+            "position": {
+                "x": 3.0,
+                "y": 0.09999999403953552,
+                "z": 9.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.7071068286895752,
+                "z": 0.0,
+                "w": 0.7071068286895752
+            }
+        }
+    ],
     "grounPosition": {
         "x": 8.5,
         "y": 0.0,

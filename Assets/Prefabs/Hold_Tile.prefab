@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5601770908491594274}
   - component: {fileID: -2458631431291847090}
   m_Layer: 0
-  m_Name: Hold Tile
+  m_Name: Hold_Tile
   m_TagString: Interactive
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

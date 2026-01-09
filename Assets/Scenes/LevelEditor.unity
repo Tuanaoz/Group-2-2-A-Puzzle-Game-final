@@ -16732,6 +16732,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movement: 0
+  minBoundX: -10
+  maxBoundX: 10
+  minBoundZ: -10
+  maxBoundZ: 10
   cameraSpeedInput: {fileID: 1828334908}
   cameraRotationSpeedInput: {fileID: 69488297}
   cameraSpeedSlider: {fileID: 1475057380}
