@@ -1386,7 +1386,8 @@
                 "y": -1.0,
                 "z": 0.0,
                 "w": 0.0
-            }
+            },
+            "prefabName": "Character_Cat"
         }
     ],
     "grounPosition": {
