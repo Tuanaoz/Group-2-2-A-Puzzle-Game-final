@@ -1,27 +1,30 @@
 using UnityEngine;
-using UnityEngine.UI;
 
-public class AudioSettingsManager : MonoBehaviour
+public class AudioSettings : MonoBehaviour
 {
-    public Slider masterVolumeSlider;
-    private const string MasterVolumeKey = "MasterVolume";
+    private const string MuteKey = "SoundMuted";
 
     void Start()
     {
-        float savedVolume = PlayerPrefs.GetFloat(MasterVolumeKey, 1f);
-        AudioListener.volume = savedVolume;
-
-        if (masterVolumeSlider != null)
-        {
-            masterVolumeSlider.value = savedVolume;
-            masterVolumeSlider.onValueChanged.AddListener(OnVolumeChanged);
-        }
+        bool isMuted = PlayerPrefs.GetInt(MuteKey, 0) == 1;
+        AudioListener.volume = isMuted ? 0f : 1f;
     }
 
-    public void OnVolumeChanged(float value)
+    public void ToggleSound()
     {
-        AudioListener.volume = value;
-        PlayerPrefs.SetFloat(MasterVolumeKey, value);
+        bool isMuted = AudioListener.volume == 0f;
+
+        if (isMuted)
+        {
+            AudioListener.volume = 1f;
+            PlayerPrefs.SetInt(MuteKey, 0);
+        }
+        else
+        {
+            AudioListener.volume = 0f;
+            PlayerPrefs.SetInt(MuteKey, 1);
+        }
+
         PlayerPrefs.Save();
     }
 }
