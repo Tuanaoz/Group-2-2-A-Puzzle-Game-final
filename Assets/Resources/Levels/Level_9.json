@@ -1,0 +1,6497 @@
+{
+    "levelName": "Final Level",
+    "placedObjects": [
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -1.0,
+                "y": 0.0,
+                "z": -1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -2.0,
+                "y": 0.0,
+                "z": -1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Goal",
+            "position": {
+                "x": 7.0,
+                "y": 0.02500000037252903,
+                "z": 5.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Spikes",
+            "position": {
+                "x": 7.0,
+                "y": 0.02500000037252903,
+                "z": 6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Spikes",
+            "position": {
+                "x": 7.0,
+                "y": 0.02500000037252903,
+                "z": 7.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Spikes",
+            "position": {
+                "x": 8.0,
+                "y": 0.02500000037252903,
+                "z": 5.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Spikes",
+            "position": {
+                "x": 9.0,
+                "y": 0.02500000037252903,
+                "z": 5.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Spikes",
+            "position": {
+                "x": 7.0,
+                "y": 0.02500000037252903,
+                "z": 4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Spikes",
+            "position": {
+                "x": 6.0,
+                "y": 0.02500000037252903,
+                "z": 5.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Spikes",
+            "position": {
+                "x": 5.0,
+                "y": 0.02500000037252903,
+                "z": 5.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Spikes",
+            "position": {
+                "x": 7.0,
+                "y": 0.02500000037252903,
+                "z": 3.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 6.0,
+                "y": 0.0,
+                "z": 4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 5.0,
+                "y": 0.0,
+                "z": 4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 6.0,
+                "y": 0.0,
+                "z": 4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 6.0,
+                "y": 0.0,
+                "z": 3.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 8.0,
+                "y": 0.0,
+                "z": 4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 8.0,
+                "y": 0.0,
+                "z": 3.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 9.0,
+                "y": 0.0,
+                "z": 4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 9.0,
+                "y": 0.0,
+                "z": 6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 8.0,
+                "y": 0.0,
+                "z": 6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 8.0,
+                "y": 0.0,
+                "z": 7.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 6.0,
+                "y": 0.0,
+                "z": 7.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 6.0,
+                "y": 0.0,
+                "z": 6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 5.0,
+                "y": 0.0,
+                "z": 6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 4.0,
+                "y": 0.0,
+                "z": 4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 4.0,
+                "y": 0.0,
+                "z": 6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 10.0,
+                "y": 0.0,
+                "z": 6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 10.0,
+                "y": 0.0,
+                "z": 4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 6.0,
+                "y": 0.0,
+                "z": 8.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 8.0,
+                "y": 0.0,
+                "z": 8.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 8.0,
+                "y": 0.0,
+                "z": 2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 6.0,
+                "y": 0.0,
+                "z": 2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Lava",
+            "position": {
+                "x": 7.0,
+                "y": 0.009999999776482582,
+                "z": 8.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Hold Tile",
+            "position": {
+                "x": 2.0,
+                "y": 0.20000000298023225,
+                "z": 5.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Acid_pit",
+            "position": {
+                "x": 11.0,
+                "y": 0.10000000149011612,
+                "z": 5.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Hold Tile",
+            "position": {
+                "x": 7.0,
+                "y": 0.20000000298023225,
+                "z": -1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 4.0,
+                "y": 0.0,
+                "z": 7.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -10.0,
+                "y": 0.0,
+                "z": 15.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -9.0,
+                "y": 0.0,
+                "z": 15.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -11.0,
+                "y": 0.0,
+                "z": 15.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -11.0,
+                "y": 0.0,
+                "z": 14.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -11.0,
+                "y": 0.0,
+                "z": 14.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -11.0,
+                "y": 0.0,
+                "z": 12.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -11.0,
+                "y": 0.0,
+                "z": 11.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -11.0,
+                "y": 0.0,
+                "z": 13.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -11.0,
+                "y": 0.0,
+                "z": 10.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -11.0,
+                "y": 0.0,
+                "z": 9.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -11.0,
+                "y": 0.0,
+                "z": 8.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -11.0,
+                "y": 0.0,
+                "z": 6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -11.0,
+                "y": 0.0,
+                "z": 8.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -11.0,
+                "y": 0.0,
+                "z": 8.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -11.0,
+                "y": 0.0,
+                "z": 7.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -11.0,
+                "y": 0.0,
+                "z": 6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -11.0,
+                "y": 0.0,
+                "z": 5.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -11.0,
+                "y": 0.0,
+                "z": 4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -11.0,
+                "y": 0.0,
+                "z": 3.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -11.0,
+                "y": 0.0,
+                "z": 2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -11.0,
+                "y": 0.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -11.0,
+                "y": 0.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -11.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -11.0,
+                "y": 0.0,
+                "z": -2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -11.0,
+                "y": 0.0,
+                "z": -3.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -11.0,
+                "y": 0.0,
+                "z": -4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -11.0,
+                "y": 0.0,
+                "z": -5.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -11.0,
+                "y": 0.0,
+                "z": -6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -11.0,
+                "y": 0.0,
+                "z": -1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -10.0,
+                "y": 0.0,
+                "z": -6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -9.0,
+                "y": 0.0,
+                "z": -6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -8.0,
+                "y": 0.0,
+                "z": -6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -6.0,
+                "y": 0.0,
+                "z": -6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -5.0,
+                "y": 0.0,
+                "z": -6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -3.0,
+                "y": 0.0,
+                "z": -6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -4.0,
+                "y": 0.0,
+                "z": -6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -8.0,
+                "y": 0.0,
+                "z": -6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -7.0,
+                "y": 0.0,
+                "z": -6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -2.0,
+                "y": 0.0,
+                "z": -6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -1.0,
+                "y": 0.0,
+                "z": -6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 1.0,
+                "y": 0.0,
+                "z": -6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 2.0,
+                "y": 0.0,
+                "z": -6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 2.0,
+                "y": 0.0,
+                "z": -6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 3.0,
+                "y": 0.0,
+                "z": -6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 4.0,
+                "y": 0.0,
+                "z": -6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 5.0,
+                "y": 0.0,
+                "z": -6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 7.0,
+                "y": 0.0,
+                "z": -6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 8.0,
+                "y": 0.0,
+                "z": -6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 10.0,
+                "y": 0.0,
+                "z": -6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 11.0,
+                "y": 0.0,
+                "z": -6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 12.0,
+                "y": 0.0,
+                "z": -6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 13.0,
+                "y": 0.0,
+                "z": -6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 14.0,
+                "y": 0.0,
+                "z": -6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 15.0,
+                "y": 0.0,
+                "z": -6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 16.0,
+                "y": 0.0,
+                "z": -6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 9.0,
+                "y": 0.0,
+                "z": -6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 6.0,
+                "y": 0.0,
+                "z": -6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 16.0,
+                "y": 0.0,
+                "z": -5.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 16.0,
+                "y": 0.0,
+                "z": -4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 16.0,
+                "y": 0.0,
+                "z": -3.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 16.0,
+                "y": 0.0,
+                "z": -2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 16.0,
+                "y": 0.0,
+                "z": -1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 16.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 16.0,
+                "y": 0.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 16.0,
+                "y": 0.0,
+                "z": 2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 16.0,
+                "y": 0.0,
+                "z": 3.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 16.0,
+                "y": 0.0,
+                "z": 5.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 16.0,
+                "y": 0.0,
+                "z": 6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 16.0,
+                "y": 0.0,
+                "z": 4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 16.0,
+                "y": 0.0,
+                "z": 7.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 16.0,
+                "y": 0.0,
+                "z": 8.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 16.0,
+                "y": 0.0,
+                "z": 9.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 16.0,
+                "y": 0.0,
+                "z": 11.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 16.0,
+                "y": 0.0,
+                "z": 14.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 16.0,
+                "y": 0.0,
+                "z": 13.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 16.0,
+                "y": 0.0,
+                "z": 12.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 16.0,
+                "y": 0.0,
+                "z": 12.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 16.0,
+                "y": 0.0,
+                "z": 10.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 16.0,
+                "y": 0.0,
+                "z": 15.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 15.0,
+                "y": 0.0,
+                "z": 15.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 14.0,
+                "y": 0.0,
+                "z": 15.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 13.0,
+                "y": 0.0,
+                "z": 15.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 11.0,
+                "y": 0.0,
+                "z": 15.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 9.0,
+                "y": 0.0,
+                "z": 15.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 8.0,
+                "y": 0.0,
+                "z": 15.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 6.0,
+                "y": 0.0,
+                "z": 15.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 7.0,
+                "y": 0.0,
+                "z": 15.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 10.0,
+                "y": 0.0,
+                "z": 15.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 12.0,
+                "y": 0.0,
+                "z": 15.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 5.0,
+                "y": 0.0,
+                "z": 15.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 4.0,
+                "y": 0.0,
+                "z": 15.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 2.0,
+                "y": 0.0,
+                "z": 15.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 1.0,
+                "y": 0.0,
+                "z": 15.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -1.0,
+                "y": 0.0,
+                "z": 15.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -2.0,
+                "y": 0.0,
+                "z": 15.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -4.0,
+                "y": 0.0,
+                "z": 15.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -6.0,
+                "y": 0.0,
+                "z": 15.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -7.0,
+                "y": 0.0,
+                "z": 15.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -8.0,
+                "y": 0.0,
+                "z": 15.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -5.0,
+                "y": 0.0,
+                "z": 15.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -3.0,
+                "y": 0.0,
+                "z": 15.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 15.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 15.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 3.0,
+                "y": 0.0,
+                "z": 15.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -1.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -1.0,
+                "y": 0.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -1.0,
+                "y": 0.0,
+                "z": 2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 7.0,
+                "y": 0.02500000037252903,
+                "z": 2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 7.0,
+                "y": 0.02500000037252903,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 7.0,
+                "y": 0.02500000037252903,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 7.0,
+                "y": 0.02500000037252903,
+                "z": -2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 1.0,
+                "y": 0.02500000037252903,
+                "z": 5.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 3.0,
+                "y": 0.02500000037252903,
+                "z": 5.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 4.0,
+                "y": 0.02500000037252903,
+                "z": 5.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 10.0,
+                "y": 0.02500000037252903,
+                "z": 5.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 13.0,
+                "y": 0.02500000037252903,
+                "z": 5.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 11.0,
+                "y": 0.02500000037252903,
+                "z": 6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 7.0,
+                "y": 0.02500000037252903,
+                "z": 9.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 7.0,
+                "y": 0.02500000037252903,
+                "z": 10.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 7.0,
+                "y": 0.02500000037252903,
+                "z": 11.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -2.0,
+                "y": 0.02500000037252903,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -2.0,
+                "y": 0.02500000037252903,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -2.0,
+                "y": 0.02500000037252903,
+                "z": 2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -3.0,
+                "y": 0.02500000037252903,
+                "z": 2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -3.0,
+                "y": 0.02500000037252903,
+                "z": 3.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -3.0,
+                "y": 0.02500000037252903,
+                "z": 4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -3.0,
+                "y": 0.02500000037252903,
+                "z": 6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -4.0,
+                "y": 0.02500000037252903,
+                "z": 5.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -3.0,
+                "y": 0.02500000037252903,
+                "z": 5.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 6.0,
+                "y": 0.02500000037252903,
+                "z": -2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 8.0,
+                "y": 0.02500000037252903,
+                "z": -2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 9.0,
+                "y": 0.02500000037252903,
+                "z": -2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 9.0,
+                "y": 0.02500000037252903,
+                "z": -1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 10.0,
+                "y": 0.02500000037252903,
+                "z": -1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 11.0,
+                "y": 0.02500000037252903,
+                "z": -1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 11.0,
+                "y": 0.02500000037252903,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 11.0,
+                "y": 0.02500000037252903,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 11.0,
+                "y": 0.02500000037252903,
+                "z": 2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 11.0,
+                "y": 0.02500000037252903,
+                "z": 3.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 11.0,
+                "y": 0.02500000037252903,
+                "z": 4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 12.0,
+                "y": 0.02500000037252903,
+                "z": 4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 13.0,
+                "y": 0.02500000037252903,
+                "z": 4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 15.0,
+                "y": 0.02500000037252903,
+                "z": 4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 14.0,
+                "y": 0.02500000037252903,
+                "z": 4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 14.0,
+                "y": 0.02500000037252903,
+                "z": 3.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 14.0,
+                "y": 0.02500000037252903,
+                "z": 2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 14.0,
+                "y": 0.02500000037252903,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 14.0,
+                "y": 0.02500000037252903,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 14.0,
+                "y": 0.02500000037252903,
+                "z": -2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 14.0,
+                "y": 0.02500000037252903,
+                "z": -3.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 14.0,
+                "y": 0.02500000037252903,
+                "z": -1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 14.0,
+                "y": 0.02500000037252903,
+                "z": -4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 12.0,
+                "y": 0.02500000037252903,
+                "z": -4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 10.0,
+                "y": 0.02500000037252903,
+                "z": -4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 11.0,
+                "y": 0.02500000037252903,
+                "z": -4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 13.0,
+                "y": 0.02500000037252903,
+                "z": -4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 12.0,
+                "y": 0.02500000037252903,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 13.0,
+                "y": 0.02500000037252903,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 12.0,
+                "y": 0.02500000037252903,
+                "z": 3.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 3.0,
+                "y": 0.02500000037252903,
+                "z": 7.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 2.0,
+                "y": 0.02500000037252903,
+                "z": 7.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 1.0,
+                "y": 0.02500000037252903,
+                "z": 6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 1.0,
+                "y": 0.02500000037252903,
+                "z": 7.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -2.0,
+                "y": 0.02500000037252903,
+                "z": 9.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -2.0,
+                "y": 0.02500000037252903,
+                "z": 7.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -2.0,
+                "y": 0.02500000037252903,
+                "z": 6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 0.0,
+                "y": 0.02500000037252903,
+                "z": 6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -1.0,
+                "y": 0.02500000037252903,
+                "z": 6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -1.0,
+                "y": 0.02500000037252903,
+                "z": 7.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -1.0,
+                "y": 0.02500000037252903,
+                "z": 8.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -2.0,
+                "y": 0.02500000037252903,
+                "z": 8.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -2.0,
+                "y": 0.02500000037252903,
+                "z": 11.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -2.0,
+                "y": 0.02500000037252903,
+                "z": 10.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -3.0,
+                "y": 0.02500000037252903,
+                "z": 10.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -4.0,
+                "y": 0.02500000037252903,
+                "z": 10.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -5.0,
+                "y": 0.02500000037252903,
+                "z": 10.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -6.0,
+                "y": 0.02500000037252903,
+                "z": 10.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -7.0,
+                "y": 0.02500000037252903,
+                "z": 10.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -8.0,
+                "y": 0.02500000037252903,
+                "z": 10.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -8.0,
+                "y": 0.02500000037252903,
+                "z": 9.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -8.0,
+                "y": 0.02500000037252903,
+                "z": 8.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -8.0,
+                "y": 0.02500000037252903,
+                "z": 7.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -8.0,
+                "y": 0.02500000037252903,
+                "z": 6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -8.0,
+                "y": 0.02500000037252903,
+                "z": 4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -8.0,
+                "y": 0.02500000037252903,
+                "z": 3.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -8.0,
+                "y": 0.02500000037252903,
+                "z": 2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -7.0,
+                "y": 0.02500000037252903,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -7.0,
+                "y": 0.02500000037252903,
+                "z": -1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -8.0,
+                "y": 0.02500000037252903,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -8.0,
+                "y": 0.02500000037252903,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -8.0,
+                "y": 0.02500000037252903,
+                "z": 5.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 0.0,
+                "y": 0.02500000037252903,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 0.0,
+                "y": 0.02500000037252903,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 1.0,
+                "y": 0.02500000037252903,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 1.0,
+                "y": 0.02500000037252903,
+                "z": -1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 2.0,
+                "y": 0.02500000037252903,
+                "z": -1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 3.0,
+                "y": 0.02500000037252903,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 3.0,
+                "y": 0.02500000037252903,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 4.0,
+                "y": 0.02500000037252903,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 4.0,
+                "y": 0.02500000037252903,
+                "z": 2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 3.0,
+                "y": 0.02500000037252903,
+                "z": 3.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 2.0,
+                "y": 0.02500000037252903,
+                "z": 3.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 1.0,
+                "y": 0.02500000037252903,
+                "z": 3.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 1.0,
+                "y": 0.02500000037252903,
+                "z": 4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Hold Tile",
+            "position": {
+                "x": 3.0,
+                "y": 0.20000000298023225,
+                "z": 6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "runestone_courage",
+            "position": {
+                "x": 5.0,
+                "y": 0.20000000298023225,
+                "z": 8.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Acid_pit",
+            "position": {
+                "x": -7.0,
+                "y": 0.10000000149011612,
+                "z": 9.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Acid_pit",
+            "position": {
+                "x": -8.0,
+                "y": 0.10000000149011612,
+                "z": -2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Acid_pit",
+            "position": {
+                "x": 2.0,
+                "y": 0.10000000149011612,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Acid_pit",
+            "position": {
+                "x": -2.0,
+                "y": 0.10000000149011612,
+                "z": 5.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Acid_pit",
+            "position": {
+                "x": -1.0,
+                "y": 0.10000000149011612,
+                "z": 9.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Lava",
+            "position": {
+                "x": 2.0,
+                "y": 0.009999999776482582,
+                "z": 5.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Lava",
+            "position": {
+                "x": 12.0,
+                "y": 0.009999999776482582,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Lava",
+            "position": {
+                "x": 11.0,
+                "y": 0.009999999776482582,
+                "z": 11.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Lava",
+            "position": {
+                "x": 13.0,
+                "y": 0.009999999776482582,
+                "z": 13.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -4.0,
+                "y": 0.02500000037252903,
+                "z": 3.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -6.0,
+                "y": 0.02500000037252903,
+                "z": 3.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -7.0,
+                "y": 0.02500000037252903,
+                "z": 3.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -5.0,
+                "y": 0.02500000037252903,
+                "z": 3.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -9.0,
+                "y": 0.02500000037252903,
+                "z": 3.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -10.0,
+                "y": 0.02500000037252903,
+                "z": 3.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -10.0,
+                "y": 0.02500000037252903,
+                "z": 4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -10.0,
+                "y": 0.02500000037252903,
+                "z": 6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -10.0,
+                "y": 0.02500000037252903,
+                "z": 5.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -10.0,
+                "y": 0.02500000037252903,
+                "z": 8.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -10.0,
+                "y": 0.02500000037252903,
+                "z": 7.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -10.0,
+                "y": 0.02500000037252903,
+                "z": 9.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -10.0,
+                "y": 0.02500000037252903,
+                "z": 10.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -10.0,
+                "y": 0.02500000037252903,
+                "z": 11.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Lava",
+            "position": {
+                "x": -10.0,
+                "y": 0.009999999776482582,
+                "z": 12.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -10.0,
+                "y": 0.0,
+                "z": 13.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -9.0,
+                "y": 0.0,
+                "z": 13.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -9.0,
+                "y": 0.0,
+                "z": 12.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -9.0,
+                "y": 0.0,
+                "z": 11.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -9.0,
+                "y": 0.0,
+                "z": 11.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -9.0,
+                "y": 0.0,
+                "z": 9.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -9.0,
+                "y": 0.0,
+                "z": 8.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -1.0,
+                "y": 0.02500000037252903,
+                "z": 5.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -2.0,
+                "y": 0.02500000037252903,
+                "z": 4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -1.0,
+                "y": 0.02500000037252903,
+                "z": 10.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 0.0,
+                "y": 0.02500000037252903,
+                "z": 9.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -6.0,
+                "y": 0.02500000037252903,
+                "z": 9.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -7.0,
+                "y": 0.02500000037252903,
+                "z": 8.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -6.0,
+                "y": 0.02500000037252903,
+                "z": 11.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -6.0,
+                "y": 0.02500000037252903,
+                "z": 12.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -6.0,
+                "y": 0.02500000037252903,
+                "z": 13.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -5.0,
+                "y": 0.02500000037252903,
+                "z": 12.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -4.0,
+                "y": 0.02500000037252903,
+                "z": 12.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -7.0,
+                "y": 0.02500000037252903,
+                "z": 12.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -7.0,
+                "y": 0.02500000037252903,
+                "z": 13.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -7.0,
+                "y": 0.02500000037252903,
+                "z": 14.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 5.0,
+                "y": 0.02500000037252903,
+                "z": 14.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 4.0,
+                "y": 0.02500000037252903,
+                "z": 12.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 4.0,
+                "y": 0.02500000037252903,
+                "z": 11.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 5.0,
+                "y": 0.02500000037252903,
+                "z": 11.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 5.0,
+                "y": 0.02500000037252903,
+                "z": 13.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 5.0,
+                "y": 0.02500000037252903,
+                "z": 12.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 4.0,
+                "y": 0.02500000037252903,
+                "z": 13.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 3.0,
+                "y": 0.02500000037252903,
+                "z": 13.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 1.0,
+                "y": 0.02500000037252903,
+                "z": 13.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -1.0,
+                "y": 0.02500000037252903,
+                "z": 13.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -1.0,
+                "y": 0.02500000037252903,
+                "z": 12.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -1.0,
+                "y": 0.02500000037252903,
+                "z": 11.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 0.0,
+                "y": 0.02500000037252903,
+                "z": 13.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 2.0,
+                "y": 0.02500000037252903,
+                "z": 13.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "crystal_green",
+            "position": {
+                "x": -6.0,
+                "y": 0.02500000037252903,
+                "z": -3.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "crystal_green",
+            "position": {
+                "x": 3.0,
+                "y": 0.02500000037252903,
+                "z": -4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "crystal_green",
+            "position": {
+                "x": -9.0,
+                "y": 0.02500000037252903,
+                "z": -1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "crystal_violet",
+            "position": {
+                "x": -6.0,
+                "y": 0.10000000149011612,
+                "z": 2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "crystal_violet",
+            "position": {
+                "x": -7.0,
+                "y": 0.10000000149011612,
+                "z": 5.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "crystal_violet",
+            "position": {
+                "x": 0.0,
+                "y": 0.10000000149011612,
+                "z": 11.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "crystal_violet",
+            "position": {
+                "x": 8.0,
+                "y": 0.10000000149011612,
+                "z": 14.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "crystal_violet",
+            "position": {
+                "x": 14.0,
+                "y": 0.10000000149011612,
+                "z": 9.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "crystal_violet",
+            "position": {
+                "x": -8.0,
+                "y": 0.10000000149011612,
+                "z": 13.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "crystal_violet",
+            "position": {
+                "x": -10.0,
+                "y": 0.10000000149011612,
+                "z": -5.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Enemy",
+            "position": {
+                "x": -780.2862548828125,
+                "y": -535429.0625,
+                "z": 3.5998289585113527
+            },
+            "rotation": {
+                "x": -0.2957399785518646,
+                "y": -0.6413538455963135,
+                "z": 0.29755744338035586,
+                "w": -0.6423882842063904
+            }
+        },
+        {
+            "prefabName": "Enemy",
+            "position": {
+                "x": 665.94873046875,
+                "y": -544682.8125,
+                "z": 11.859306335449219
+            },
+            "rotation": {
+                "x": -0.000008484524187224451,
+                "y": 0.7070540189743042,
+                "z": -0.000007971421837282833,
+                "w": 0.7071595788002014
+            }
+        },
+        {
+            "prefabName": "Enemy",
+            "position": {
+                "x": 22.823144912719728,
+                "y": -544475.875,
+                "z": -824.089599609375
+            },
+            "rotation": {
+                "x": 0.5571834444999695,
+                "y": 0.06263013929128647,
+                "z": -0.3989580571651459,
+                "w": -0.7255733013153076
+            }
+        },
+        {
+            "prefabName": "Enemy",
+            "position": {
+                "x": 815.3522338867188,
+                "y": -529154.9375,
+                "z": -3.594620943069458
+            },
+            "rotation": {
+                "x": -0.15087653696537019,
+                "y": 0.6897540092468262,
+                "z": 0.1504693478345871,
+                "w": 0.6919788122177124
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 4.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 5.0,
+                "y": 0.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 6.0,
+                "y": 0.0,
+                "z": 14.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 6.0,
+                "y": 0.0,
+                "z": 13.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 6.0,
+                "y": 0.0,
+                "z": 12.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 4.0,
+                "y": 0.0,
+                "z": 14.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 2.0,
+                "y": 0.0,
+                "z": 14.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 3.0,
+                "y": 0.0,
+                "z": 12.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 3.0,
+                "y": 0.0,
+                "z": 11.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 4.0,
+                "y": 0.0,
+                "z": 10.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 5.0,
+                "y": 0.0,
+                "z": 10.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "mushroom_red_small",
+            "position": {
+                "x": -5.0,
+                "y": 0.0,
+                "z": 11.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "mushroom_red_small",
+            "position": {
+                "x": 3.0,
+                "y": 0.0,
+                "z": 4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "mushroom_red_small",
+            "position": {
+                "x": 3.0,
+                "y": 0.0,
+                "z": 14.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "mushroom_red_small",
+            "position": {
+                "x": 6.0,
+                "y": 0.0,
+                "z": 10.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "mushroom_red_small",
+            "position": {
+                "x": 14.0,
+                "y": 0.0,
+                "z": 5.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "mushroom_red_small",
+            "position": {
+                "x": 12.0,
+                "y": 0.0,
+                "z": 2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "mushroom_red_small",
+            "position": {
+                "x": 9.0,
+                "y": 0.0,
+                "z": 3.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "mushroom_red_small",
+            "position": {
+                "x": 1.0,
+                "y": 0.0,
+                "z": -4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "mushroom_red_small",
+            "position": {
+                "x": 4.0,
+                "y": 0.0,
+                "z": -4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "mushroom_red_small",
+            "position": {
+                "x": -6.0,
+                "y": 0.0,
+                "z": -1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 13.0,
+                "y": 0.0,
+                "z": 3.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 13.0,
+                "y": 0.0,
+                "z": 2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 15.0,
+                "y": 0.0,
+                "z": 5.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 14.0,
+                "y": 0.0,
+                "z": 6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 9.0,
+                "y": 0.0,
+                "z": 9.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 10.0,
+                "y": 0.0,
+                "z": 9.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 12.0,
+                "y": 0.0,
+                "z": 9.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 11.0,
+                "y": 0.0,
+                "z": 9.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -6.0,
+                "y": 0.0,
+                "z": 14.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -5.0,
+                "y": 0.0,
+                "z": 13.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -4.0,
+                "y": 0.0,
+                "z": 13.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -3.0,
+                "y": 0.0,
+                "z": 13.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -4.0,
+                "y": 0.0,
+                "z": 11.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -3.0,
+                "y": 0.0,
+                "z": 11.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -8.0,
+                "y": 0.0,
+                "z": 12.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -8.0,
+                "y": 0.02500000037252903,
+                "z": 14.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -9.0,
+                "y": 0.02500000037252903,
+                "z": 14.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "rock_big_long",
+            "position": {
+                "x": -4.0,
+                "y": 0.10000000149011612,
+                "z": -3.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.7071068286895752,
+                "z": 0.0,
+                "w": 0.7071068286895752
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -4.0,
+                "y": 0.02500000037252903,
+                "z": -5.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -3.0,
+                "y": 0.02500000037252903,
+                "z": -5.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -3.0,
+                "y": 0.02500000037252903,
+                "z": -4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -3.0,
+                "y": 0.02500000037252903,
+                "z": -3.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -3.0,
+                "y": 0.02500000037252903,
+                "z": -2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -3.0,
+                "y": 0.02500000037252903,
+                "z": -1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -3.0,
+                "y": 0.02500000037252903,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -4.0,
+                "y": 0.02500000037252903,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -5.0,
+                "y": 0.02500000037252903,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -6.0,
+                "y": 0.02500000037252903,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 0.0,
+                "y": 0.02500000037252903,
+                "z": 2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 1.0,
+                "y": 0.02500000037252903,
+                "z": -2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -1.0,
+                "y": 0.02500000037252903,
+                "z": -2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -2.0,
+                "y": 0.02500000037252903,
+                "z": -2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -1.0,
+                "y": 0.02500000037252903,
+                "z": -3.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 3.0,
+                "y": 0.02500000037252903,
+                "z": -1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 3.0,
+                "y": 0.02500000037252903,
+                "z": -2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 4.0,
+                "y": 0.02500000037252903,
+                "z": -2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 5.0,
+                "y": 0.02500000037252903,
+                "z": -2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 8.0,
+                "y": 0.02500000037252903,
+                "z": 11.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 9.0,
+                "y": 0.02500000037252903,
+                "z": 11.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 10.0,
+                "y": 0.02500000037252903,
+                "z": 11.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 10.0,
+                "y": 0.02500000037252903,
+                "z": 10.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 11.0,
+                "y": 0.02500000037252903,
+                "z": 10.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 12.0,
+                "y": 0.02500000037252903,
+                "z": 10.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 12.0,
+                "y": 0.02500000037252903,
+                "z": 11.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 12.0,
+                "y": 0.02500000037252903,
+                "z": 12.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 11.0,
+                "y": 0.02500000037252903,
+                "z": 12.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 10.0,
+                "y": 0.02500000037252903,
+                "z": 12.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 11.0,
+                "y": 0.02500000037252903,
+                "z": 13.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 11.0,
+                "y": 0.02500000037252903,
+                "z": 14.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 13.0,
+                "y": 0.02500000037252903,
+                "z": 12.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 14.0,
+                "y": 0.02500000037252903,
+                "z": 12.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 13.0,
+                "y": 0.02500000037252903,
+                "z": 14.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 14.0,
+                "y": 0.02500000037252903,
+                "z": 13.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 15.0,
+                "y": 0.02500000037252903,
+                "z": 12.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 14.0,
+                "y": 0.02500000037252903,
+                "z": 11.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 14.0,
+                "y": 0.02500000037252903,
+                "z": 10.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 13.0,
+                "y": 0.02500000037252903,
+                "z": 10.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 13.0,
+                "y": 0.0,
+                "z": 11.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Enemy",
+            "position": {
+                "x": -7.62074613571167,
+                "y": -544682.8125,
+                "z": 673.0857543945313
+            },
+            "rotation": {
+                "x": 2.0857893900938508e-7,
+                "y": 0.0002448392624501139,
+                "z": 0.000005134511411597487,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Enemy",
+            "position": {
+                "x": -3.208113431930542,
+                "y": 0.004467666149139404,
+                "z": 6.987139701843262
+            },
+            "rotation": {
+                "x": 0.000009387538739247248,
+                "y": -0.7072288393974304,
+                "z": 0.000008178732969099656,
+                "w": -0.7069847583770752
+            }
+        },
+        {
+            "prefabName": "Enemy",
+            "position": {
+                "x": -7.766315460205078,
+                "y": 0.0044640302658081059,
+                "z": 9.805770874023438
+            },
+            "rotation": {
+                "x": -2.004757249096656e-8,
+                "y": 0.00463970797136426,
+                "z": 1.1259231769145117e-7,
+                "w": 0.9999892711639404
+            }
+        },
+        {
+            "prefabName": "Enemy",
+            "position": {
+                "x": 8.51595687866211,
+                "y": 0.004464268684387207,
+                "z": -1.000392198562622
+            },
+            "rotation": {
+                "x": 0.0000011436258091634955,
+                "y": -0.7070930600166321,
+                "z": 0.0000013070249451629934,
+                "w": -0.7071205973625183
+            }
+        },
+        {
+            "prefabName": "Lava",
+            "position": {
+                "x": 3.0,
+                "y": 0.009999999776482582,
+                "z": 6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "plant_moonspindle_small",
+            "position": {
+                "x": 3.0,
+                "y": 0.009999999776482582,
+                "z": 10.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "plant_moonspindle_small",
+            "position": {
+                "x": -5.0,
+                "y": 0.009999999776482582,
+                "z": 5.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "plant_moonspindle_small",
+            "position": {
+                "x": -5.0,
+                "y": 0.009999999776482582,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "plant_moonspindle_small",
+            "position": {
+                "x": -7.0,
+                "y": 0.009999999776482582,
+                "z": -3.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "plant_moonspindle_small",
+            "position": {
+                "x": -10.0,
+                "y": 0.009999999776482582,
+                "z": -2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "plant_moonspindle_small",
+            "position": {
+                "x": 13.0,
+                "y": 0.009999999776482582,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "plant_moonspindle_small",
+            "position": {
+                "x": 14.0,
+                "y": 0.009999999776482582,
+                "z": 8.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "plant_moonspindle_small",
+            "position": {
+                "x": 9.0,
+                "y": 0.009999999776482582,
+                "z": 13.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 2.0,
+                "y": 0.02500000037252903,
+                "z": -3.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 2.0,
+                "y": 0.02500000037252903,
+                "z": -4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 2.0,
+                "y": 0.02500000037252903,
+                "z": -5.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 3.0,
+                "y": 0.02500000037252903,
+                "z": -3.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 4.0,
+                "y": 0.02500000037252903,
+                "z": -3.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 5.0,
+                "y": 0.02500000037252903,
+                "z": -3.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 9.0,
+                "y": 0.02500000037252903,
+                "z": -5.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 9.0,
+                "y": 0.02500000037252903,
+                "z": -4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 9.0,
+                "y": 0.02500000037252903,
+                "z": -3.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 10.0,
+                "y": 0.02500000037252903,
+                "z": -3.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 11.0,
+                "y": 0.02500000037252903,
+                "z": -3.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 10.0,
+                "y": 0.0,
+                "z": -2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 11.0,
+                "y": 0.0,
+                "z": -2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 12.0,
+                "y": 0.0,
+                "z": -2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 12.0,
+                "y": 0.0,
+                "z": -3.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 13.0,
+                "y": 0.0,
+                "z": -3.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 8.0,
+                "y": 0.0,
+                "z": -3.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 8.0,
+                "y": 0.0,
+                "z": -4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 8.0,
+                "y": 0.0,
+                "z": -5.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 10.0,
+                "y": 0.0,
+                "z": -5.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 11.0,
+                "y": 0.0,
+                "z": -5.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 13.0,
+                "y": 0.0,
+                "z": -5.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 12.0,
+                "y": 0.0,
+                "z": -5.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 14.0,
+                "y": 0.0,
+                "z": -5.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 15.0,
+                "y": 0.0,
+                "z": -5.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -7.0,
+                "y": 0.0,
+                "z": 5.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -7.0,
+                "y": 0.0,
+                "z": 4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -6.0,
+                "y": 0.0,
+                "z": 4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -5.0,
+                "y": 0.0,
+                "z": 4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -9.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -10.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -10.0,
+                "y": 0.0,
+                "z": -1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -10.0,
+                "y": 0.0,
+                "z": -2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -9.0,
+                "y": 0.0,
+                "z": -2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -9.0,
+                "y": 0.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -9.0,
+                "y": 0.0,
+                "z": 2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 7.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 8.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": 1.0,
+                "y": 0.0,
+                "z": 8.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -4.0,
+                "y": 0.0,
+                "z": 9.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Wall",
+            "position": {
+                "x": -3.0,
+                "y": 0.0,
+                "z": 9.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": -9.0,
+                "y": 0.02500000037252903,
+                "z": 10.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 6.0,
+                "y": 0.02500000037252903,
+                "z": 11.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 11.0,
+                "y": 0.02500000037252903,
+                "z": 7.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 12.0,
+                "y": 0.02500000037252903,
+                "z": 7.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 12.0,
+                "y": 0.02500000037252903,
+                "z": 8.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 13.0,
+                "y": 0.02500000037252903,
+                "z": 8.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 13.0,
+                "y": 0.02500000037252903,
+                "z": 9.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 12.0,
+                "y": 0.02500000037252903,
+                "z": 6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Conveyor_Panel",
+            "position": {
+                "x": 13.0,
+                "y": 0.02500000037252903,
+                "z": 6.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "prefabName": "Enemy",
+            "position": {
+                "x": 1.3074264526367188,
+                "y": 0.00446474552154541,
+                "z": -4.9998273849487309
+            },
+            "rotation": {
+                "x": 0.000004143602836848004,
+                "y": -0.7071066498756409,
+                "z": 0.00000404055663238978,
+                "w": -0.7071069478988648
+            }
+        }
+    ],
+    "characters": [
+        {
+            "position": {
+                "x": -1.0,
+                "y": 0.10000000149011612,
+                "z": -4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        }
+    ],
+    "grounPosition": {
+        "x": 3.0,
+        "y": 0.0,
+        "z": 4.5
+    },
+    "groundScale": {
+        "x": 2.8999993801116945,
+        "y": 1.0,
+        "z": 2.200000047683716
+    },
+    "groundThemeIndex": 4,
+    "northArrowsPosition": {
+        "x": 5.5,
+        "y": 0.0,
+        "z": 20.0
+    },
+    "southArrowsPosition": {
+        "x": 5.5,
+        "y": 0.0,
+        "z": -2.0
+    },
+    "eastArrowsPosition": {
+        "x": 23.0,
+        "y": 0.0,
+        "z": 9.0
+    },
+    "westArrowsPosition": {
+        "x": -12.0,
+        "y": 0.0,
+        "z": 9.0
+    },
+    "bonusCollectibleCount": 0,
+    "bonusCollected": 0,
+    "cameraMinBoundX": -22.0,
+    "cameraMaxBoundX": 33.0,
+    "cameraMinBoundZ": -12.0,
+    "cameraMaxBoundZ": 30.0
+}

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1310,7 +1310,6 @@ MonoBehaviour:
   lockIcon: {fileID: 0}
   levelButton: {fileID: 346646436}
   UnlockedIcon: {fileID: 0}
-  saveLoadManager: {fileID: 1667710156}
 --- !u!1001 &353395003
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1438,7 +1437,6 @@ MonoBehaviour:
   lockIcon: {fileID: 0}
   levelButton: {fileID: 366688918}
   UnlockedIcon: {fileID: 0}
-  saveLoadManager: {fileID: 1667710156}
 --- !u!114 &366688918 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6067706693356966063, guid: ff8f67a6507c90440a825ac87b637878, type: 3}
@@ -1754,11 +1752,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 915879c2d8904c041bffb8abca89ebe0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelIndex: 5
+  levelIndex: 3
   lockIcon: {fileID: 423988180}
   levelButton: {fileID: 423988183}
   UnlockedIcon: {fileID: 423988181}
-  saveLoadManager: {fileID: 1667710156}
 --- !u!1 &450834450
 GameObject:
   m_ObjectHideFlags: 0
@@ -2609,11 +2606,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 915879c2d8904c041bffb8abca89ebe0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelIndex: 7
+  levelIndex: 5
   lockIcon: {fileID: 595499739}
   levelButton: {fileID: 595499742}
   UnlockedIcon: {fileID: 595499740}
-  saveLoadManager: {fileID: 1667710156}
 --- !u!1 &618960071
 GameObject:
   m_ObjectHideFlags: 0
@@ -5848,11 +5844,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 915879c2d8904c041bffb8abca89ebe0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelIndex: 6
+  levelIndex: 4
   lockIcon: {fileID: 1077489288}
   levelButton: {fileID: 1077489291}
   UnlockedIcon: {fileID: 1077489289}
-  saveLoadManager: {fileID: 1667710156}
 --- !u!1 &1081550660
 GameObject:
   m_ObjectHideFlags: 0
@@ -6732,11 +6727,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 915879c2d8904c041bffb8abca89ebe0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelIndex: 4
+  levelIndex: 2
   lockIcon: {fileID: 1227854604}
   levelButton: {fileID: 1227854607}
   UnlockedIcon: {fileID: 1227854605}
-  saveLoadManager: {fileID: 1667710156}
 --- !u!1 &1315465125
 GameObject:
   m_ObjectHideFlags: 0
@@ -7504,11 +7498,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 915879c2d8904c041bffb8abca89ebe0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelIndex: 8
+  levelIndex: 6
   lockIcon: {fileID: 1433450819}
   levelButton: {fileID: 1433450822}
   UnlockedIcon: {fileID: 1433450820}
-  saveLoadManager: {fileID: 1667710156}
 --- !u!1 &1507151743
 GameObject:
   m_ObjectHideFlags: 0
@@ -9312,11 +9305,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 915879c2d8904c041bffb8abca89ebe0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelIndex: 9
+  levelIndex: 7
   lockIcon: {fileID: 1730662493}
   levelButton: {fileID: 1730662496}
   UnlockedIcon: {fileID: 1730662494}
-  saveLoadManager: {fileID: 1667710156}
 --- !u!1 &1735711410
 GameObject:
   m_ObjectHideFlags: 0
@@ -9659,7 +9651,6 @@ MonoBehaviour:
   lockIcon: {fileID: 0}
   levelButton: {fileID: 1843316589}
   UnlockedIcon: {fileID: 0}
-  saveLoadManager: {fileID: 1667710156}
 --- !u!114 &1843316589 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6067706693356966063, guid: ff8f67a6507c90440a825ac87b637878, type: 3}
@@ -10529,11 +10520,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 915879c2d8904c041bffb8abca89ebe0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelIndex: 3
+  levelIndex: 1
   lockIcon: {fileID: 2048463572}
   levelButton: {fileID: 2048463575}
   UnlockedIcon: {fileID: 2048463573}
-  saveLoadManager: {fileID: 1667710156}
 --- !u!224 &2092747031 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4498520707153549016, guid: ff8f67a6507c90440a825ac87b637878, type: 3}
