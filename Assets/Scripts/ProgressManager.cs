@@ -1,5 +1,4 @@
 using UnityEngine;
-
 public static class ProgressManager
 {
     private const string LEVEL_KEY = "HighestUnlockedLevel";

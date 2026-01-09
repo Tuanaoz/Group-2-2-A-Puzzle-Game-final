@@ -12,8 +12,9 @@ public class LevelNode : MonoBehaviour
 
     void Start()
     {
-        bool isTutorial = levelIndex < 3;
         bool unlocked;
+        bool isTutorial = levelIndex < 3;
+
 
         if (isTutorial)
         {
