@@ -4,6 +4,7 @@ public static class ProgressManager
 {
     private const string LEVEL_KEY = "HighestUnlockedLevel";
     public static int TotalMainLevels = 7;
+    public static int TutorialCount=3;
 
 //Max level the player reached
     public static int HighestUnlockedLevel
@@ -26,6 +27,8 @@ public static class ProgressManager
 //called when a level is completed
     public static void CompleteLevel(int currentLevelIndex)
     {
+        if (currentLevelIndex < TutorialCount)
+            return;
         if (HighestUnlockedLevel == currentLevelIndex)
         {
             HighestUnlockedLevel++;

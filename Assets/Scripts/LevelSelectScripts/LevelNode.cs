@@ -12,27 +12,23 @@ public class LevelNode : MonoBehaviour
 
     void Start()
     {
+        bool isTutorial = levelIndex < 3;
         bool unlocked;
 
-// Tutorials always open, no progress check
-        if (levelIndex < 3)
+        if (isTutorial)
         {
             unlocked = true;
-
-            if (lockIcon != null)
-                lockIcon.SetActive(false);
-            if (UnlockedIcon != null)
-                UnlockedIcon.SetActive(false);
         }
         else
         {
             unlocked = levelIndex <= ProgressManager.HighestUnlockedLevel;
+
             if (lockIcon != null)
                 lockIcon.SetActive(!unlocked);
             if (UnlockedIcon != null)
                 UnlockedIcon.SetActive(unlocked);
         }
-
+        
         levelButton.interactable = unlocked;
         levelButton.onClick.AddListener(OnClick);
     }
@@ -41,6 +37,9 @@ public class LevelNode : MonoBehaviour
     {
         if (!levelButton.interactable)
             return;
+
+        PlayerPrefs.SetInt("CurrentLevelID", levelIndex);
+        PlayerPrefs.Save();
 
         string levelName;
 
