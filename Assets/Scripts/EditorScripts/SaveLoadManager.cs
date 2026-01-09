@@ -60,7 +60,16 @@ public class SaveLoadManager : MonoBehaviour
     {
         if (!PlayerPrefs.HasKey("HighestUnlockedLevel"))
         {
+<<<<<<< Updated upstream
             PlayerPrefs.SetInt("HighestUnlockedLevel", 1);
+=======
+            LoadLevelFromResources(LevelLoadRequest.RequestedLevelName);
+            LevelLoadRequest.RequestedLevelName = null;
+            return;
+        }
+        if (currentScene.name=="LevelEditor" && gridManager != null) {
+                    gridManager.UIToggle();
+>>>>>>> Stashed changes
         }
 
         gridManager.UIToggle();
@@ -130,17 +139,41 @@ public class SaveLoadManager : MonoBehaviour
         LevelData levelData = new LevelData();
         levelData.levelName = saveFileName;
 
+<<<<<<< Updated upstream
         levelData.playerStartPosition = gridManager.getPlayerSpawnPosition();
         levelData.playerSpawnRotation = gridManager.getPlayerSpawnRotation();
         levelData.grounPosition = gridManager.getGroundPosition();
         levelData.groundScale = gridManager.getGroundScale();
+=======
+        Transform ground = GameObject.Find("Ground").transform;
+        levelData.grounPosition = ground.position;
+        levelData.groundScale = ground.localScale;
+        levelData.groundThemeIndex = groundTheme.currentThemeIndex;
+>>>>>>> Stashed changes
         levelData.northArrowsPosition = gridManager.getNorthArrowsPosition();
         levelData.southArrowsPosition = gridManager.getSouthArrowsPosition();
         levelData.eastArrowsPosition = gridManager.getEastArrowsPosition();
         levelData.westArrowsPosition = gridManager.getWestArrowsPosition();
 
+<<<<<<< Updated upstream
         foreach (Transform child in placementContainer)
         {
+=======
+        foreach (Transform child in placementContainer) {
+
+            String prefabName = child.gameObject.name.Replace("(Clone)", "").Trim();
+
+            if (prefabName == "Character") {
+                CharacterData charData = new CharacterData(
+                    gridManager.getPlayerSpawnPosition(charCount),
+                    gridManager.getPlayerSpawnRotation(charCount)
+                );
+                levelData.characters.Add(charData);
+                charCount++;
+                continue;
+            }
+
+>>>>>>> Stashed changes
             PlacedObjectData objData = new PlacedObjectData(
                 child.gameObject.name.Replace("(Clone)", "").Trim(),
                 child.position,
@@ -241,7 +274,26 @@ public class SaveLoadManager : MonoBehaviour
         ground.transform.position = levelData.grounPosition;
         ground.transform.localScale = levelData.groundScale;
 
+<<<<<<< Updated upstream
         // Instantiate saved objects
+=======
+
+        GroundTheme themeController=FindFirstObjectByType<GroundTheme>();
+            if (themeController != null)
+            {
+                themeController.SetTheme(levelData.groundThemeIndex);
+            }
+
+        foreach (CharacterData charData in levelData.characters) {
+            GameObject prefab = Array.Find(placeablePrefabs, p => p.name == "Character");
+            if (prefab != null) {
+                Instantiate(prefab, charData.position, charData.rotation, placementContainer);
+                gridManager.addCharacterStartPosition(charData.position);
+                gridManager.addCharacterStartRotation(charData.rotation);
+            }
+        }
+
+>>>>>>> Stashed changes
         foreach (PlacedObjectData objData in levelData.placedObjects) {
             GameObject prefab = Array.Find(placeablePrefabs, p => p.name == objData.prefabName);
             if (prefab != null) {

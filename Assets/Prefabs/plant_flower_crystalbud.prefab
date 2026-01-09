@@ -60,6 +60,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: plant_flower_crystalbud
       objectReference: {fileID: 0}
+<<<<<<< Updated upstream
+=======
+    - target: {fileID: 919132149155446097, guid: f97ae37d44ff99c4cb11ab1ab3b10339, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f97ae37d44ff99c4cb11ab1ab3b10339, type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+>>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

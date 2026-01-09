@@ -12,8 +12,14 @@ GameObject:
   - component: {fileID: 5189670621955521845}
   - component: {fileID: 7156953157372070660}
   - component: {fileID: 6407663023585247343}
+<<<<<<< Updated upstream
   - component: {fileID: 7982222392712656846}
   m_Layer: 0
+=======
+  - component: {fileID: 5601770908491594274}
+  - component: {fileID: -2458631431291847090}
+  m_Layer: 3
+>>>>>>> Stashed changes
   m_Name: Hold Tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}

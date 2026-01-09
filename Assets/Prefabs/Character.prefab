@@ -17,7 +17,14 @@ GameObject:
   - component: {fileID: -6114173091369137318}
   - component: {fileID: -6702135876237394381}
   - component: {fileID: 3242002311825109665}
+<<<<<<< Updated upstream
   m_Layer: 0
+=======
+  - component: {fileID: 2123043273614939534}
+  - component: {fileID: 8157759365692374158}
+  - component: {fileID: 1268395012561143403}
+  m_Layer: 7
+>>>>>>> Stashed changes
   m_Name: Character
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -192,5 +199,55 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91f276406ed57f9428ad8ce1b5a3dd93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   levelCompleteUI: {fileID: 0}
   gameFailUI: {fileID: 0}
+=======
+--- !u!114 &2123043273614939534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1075446157649888535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a478e768a9206274cbcae01b9a3ec8f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8157759365692374158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1075446157649888535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 827c1bda3e6d7654f9ef9b6e581fcc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canMove: 1
+--- !u!95 &1268395012561143403
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1075446157649888535}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 9b574434f73c46a4eb333235dd556599, type: 3}
+  m_Controller: {fileID: 9100000, guid: df2e20b0d1dd9a844b3c911ccf4843ee, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+>>>>>>> Stashed changes
