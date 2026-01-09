@@ -4543,5 +4543,9 @@
         "z": 12.5
     },
     "bonusCollectibleCount": 0,
-    "bonusCollected": 0
+    "bonusCollected": 0,
+    "cameraMinBoundX": -10.0,
+    "cameraMaxBoundX": 10.0,
+    "cameraMinBoundZ": -10.0,
+    "cameraMaxBoundZ": 10.0
 }

@@ -1834,5 +1834,9 @@
         "x": 0.0,
         "y": 0.0,
         "z": 0.0
-    }
+    },
+    "cameraMinBoundX": -10.0,
+    "cameraMaxBoundX": 10.0,
+    "cameraMinBoundZ": -10.0,
+    "cameraMaxBoundZ": 10.0
 }

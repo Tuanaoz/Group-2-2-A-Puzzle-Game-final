@@ -47,6 +47,10 @@ public class LevelData {
     public Vector3 westArrowsPosition;
     public int bonusCollectibleCount;
     public int bonusCollected;
+    public float cameraMinBoundX;
+    public float cameraMaxBoundX;
+    public float cameraMinBoundZ;
+    public float cameraMaxBoundZ;
 }
 
 public class SaveLoadManager : MonoBehaviour
@@ -176,6 +180,11 @@ public class SaveLoadManager : MonoBehaviour
         levelData.eastArrowsPosition = gridManager.getEastArrowsPosition();
         levelData.westArrowsPosition = gridManager.getWestArrowsPosition();
 
+        levelData.cameraMinBoundX = mainCameraMovement.GetMinBoundX();
+        levelData.cameraMaxBoundX = mainCameraMovement.GetMaxBoundX();
+        levelData.cameraMinBoundZ = mainCameraMovement.GetMinBoundZ();
+        levelData.cameraMaxBoundZ = mainCameraMovement.GetMaxBoundZ();
+
         foreach (Transform child in placementContainer) {
 
             String prefabName = child.gameObject.name.Replace("(Clone)", "").Trim();
@@ -264,6 +273,13 @@ public class SaveLoadManager : MonoBehaviour
         GameObject ground = GameObject.Find("Ground");
         ground.transform.position = levelData.grounPosition;
         ground.transform.localScale = levelData.groundScale;
+
+        mainCameraMovement.setBounds(
+            levelData.cameraMinBoundX,
+            levelData.cameraMaxBoundX,
+            levelData.cameraMinBoundZ,
+            levelData.cameraMaxBoundZ
+        );
 
 
         GroundTheme themeController=FindFirstObjectByType<GroundTheme>();

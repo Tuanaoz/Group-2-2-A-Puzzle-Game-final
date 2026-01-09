@@ -12,10 +12,10 @@ public class CameraMovement : MonoBehaviour
     // public float rotationSpeed = 500f;
     float zoomSpeed = 500f;
     public bool movement;
-    private float minBoundX = -10f;
-    private float maxBoundX = 10f;
-    private float minBoundZ = -10f;
-    private float maxBoundZ = 10f;
+    public float minBoundX = -10f;
+    public float maxBoundX = 10f;
+    public float minBoundZ = -10f;
+    public float maxBoundZ = 10f;
     public TMP_InputField cameraSpeedInput;
     public TMP_InputField cameraRotationSpeedInput;
     public Slider cameraSpeedSlider;
@@ -173,5 +173,28 @@ public class CameraMovement : MonoBehaviour
         List<RaycastResult> results = new List<RaycastResult>();
         EventSystem.current.RaycastAll(eventDataCurrentPosition, results);
         return results.Count > 0;
+    }
+
+    public float GetMinBoundX() {
+        return minBoundX;
+    }
+
+    public float GetMaxBoundX() {
+        return maxBoundX;
+    }
+
+    public float GetMinBoundZ() {
+        return minBoundZ;
+    }
+
+    public float GetMaxBoundZ() {
+        return maxBoundZ;
+    }
+
+    public void setBounds(float minX, float maxX, float minZ, float maxZ) {
+        minBoundX = minX;
+        maxBoundX = maxX;
+        minBoundZ = minZ;
+        maxBoundZ = maxZ;
     }
 }
