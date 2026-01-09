@@ -19,6 +19,8 @@ TagManager:
   - Environment
   - Interactive
   - Switch
+  - SpeedTile
+  - Food
   layers:
   - Default
   - TransparentFX

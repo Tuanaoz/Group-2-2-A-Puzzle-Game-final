@@ -198,6 +198,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelCompleteUI: {fileID: 0}
   gameFailUI: {fileID: 0}
+  colorLerpSpeed: 5
+  highlightColor: {r: 0, g: 1, b: 0, a: 1}
+  tileSound: {fileID: 8300000, guid: 52558b0d70fa647cf9428ddf27a171c5, type: 3}
+  eatSound: {fileID: 8300000, guid: 3689c41a951bd459f9d486a999f87852, type: 3}
 --- !u!114 &2123043273614939534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,7 +229,7 @@ MonoBehaviour:
   canMove: 1
 --- !u!95 &1268395012561143403
 Animator:
-  serializedVersion: 7
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -239,7 +243,6 @@ Animator:
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1

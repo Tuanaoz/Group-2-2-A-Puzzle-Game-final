@@ -9,7 +9,8 @@ public class CharacterMovement : MonoBehaviour
     public bool movement = false;
     private Rigidbody rb;
     public HoldPlayer holdPlayer;
-
+    Vector3 initPosition;
+    Quaternion initRotation;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +22,8 @@ public class CharacterMovement : MonoBehaviour
         }
         rb.useGravity = false;
         rb.isKinematic = false;
+        initPosition = transform.position;
+        initRotation = transform.rotation;
     }
 
     // Update is called once per frame
@@ -57,5 +60,11 @@ public class CharacterMovement : MonoBehaviour
 
     public bool IsMoving() {
         return movement;
+    }
+    public void ResetPosition()
+    {
+        PauseMovement();
+        transform.position = initPosition;
+        transform.rotation = initRotation;
     }
 }

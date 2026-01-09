@@ -9,6 +9,7 @@ public class CharMoveManager : MonoBehaviour
     public Button buttonStart;
     public Button buttonPause;
     public Transform placementContainer;
+    public GameObject FailPanel;
     private List<CharacterMovement> characterMovements = new List<CharacterMovement>();
     private bool gotCharacters = false;
 
@@ -52,5 +53,15 @@ public class CharMoveManager : MonoBehaviour
     public void clearCharacters() {
         gotCharacters = false;
         characterMovements.Clear();
+    }
+    public void ResetLevel()
+    {
+        FailPanel.SetActive(false);
+        foreach (CharacterMovement cm in characterMovements) 
+        {
+            cm.ResetPosition();
+        }
+        buttonStart.gameObject.SetActive(true);
+        buttonPause.gameObject.SetActive(false);
     }
 }
