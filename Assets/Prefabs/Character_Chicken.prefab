@@ -201,6 +201,7 @@ MonoBehaviour:
   highlightColor: {r: 0, g: 1, b: 0, a: 1}
   tileSound: {fileID: 8300000, guid: 52558b0d70fa647cf9428ddf27a171c5, type: 3}
   eatSound: {fileID: 8300000, guid: 3689c41a951bd459f9d486a999f87852, type: 3}
+  source: {fileID: 0}
 --- !u!114 &2123043273614939534
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -104,7 +104,6 @@ public class SaveLoadManager : MonoBehaviour
             gridManager.UIToggle();
         }
         levelFolder = Application.persistentDataPath + "/CreatedLevels/";
-        print(levelFolder);
         if (!Directory.Exists(levelFolder)) {
             Directory.CreateDirectory(levelFolder);
         }
