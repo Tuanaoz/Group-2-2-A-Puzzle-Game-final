@@ -54,6 +54,10 @@ public class CharacterMovement : MonoBehaviour
 // Stops movement
     public void PauseMovement()
     {
+        if (DifficultyBehaviour.hardDifficulty)
+        {
+            return;
+        }
         movement = false;
         if (rb != null) {
             rb.velocity = Vector3.zero;

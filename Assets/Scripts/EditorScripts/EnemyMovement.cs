@@ -10,10 +10,15 @@ public class EnemyMovement : MonoBehaviour
     public Vector3 ChangeDirection = Vector3.forward;
     public Vector3 startDirection;
     private bool forward = false;
+
     void Start()
     {
         ChangeDirection = transform.forward.normalized;
         startDirection = ChangeDirection;
+        if (DifficultyBehaviour.hardDifficulty)
+        {
+            EnemySpeed *= 1.5f;
+        }
     }
 
     // Update is called once per frame
