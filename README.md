@@ -4,6 +4,10 @@
 
 Guide the Cat to the end goal. Avoid obstacles and rotate interactable objects to guide the character safely. The character starts moving forward when the Start button is pressed and can be paused mid-game. Complete the tutorial levels before playing the main  story to get a better grasp of the game. You can also create custom levels to play after completing all the main levels and share.
 
+### Level Share Feature
+
+To share the level, click Share in the level editor. The button will copy the preferred level's JSON file. 
+
 ### Camera movement
 
 1. WASD - Move camera directionally
