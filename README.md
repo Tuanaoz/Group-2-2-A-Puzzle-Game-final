@@ -19,7 +19,7 @@ Left click object - Bring up the option to rotate (Right click to exit that UI)
 
 2-Door Asset: https://assetstore.unity.com/packages/templates/systems/easy-door-system-309567 and https://assetstore.unity.com/packages/3d/props/exterior/wooden-entrance-door-glass-window-297927
 
-3-Main Character (Also Animations and related scripts): https://assetstore.unity.com/packages/3d/characters/animals/mammals/free-chibi-cat-165490 and https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727
+3-Main Characters (Animations): https://assetstore.unity.com/packages/3d/characters/animals/mammals/free-chibi-cat-165490 and https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727
 
 4-Enemies: https://assetstore.unity.com/packages/3d/characters/animals/free-stylized-bear-rpg-forest-animal-228910 and https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 and 
 
