@@ -43,3 +43,11 @@ Left click object - Bring up the option to rotate (Right click to exit that UI)
 
 14- Background Music: https://assetstore.unity.com/packages/audio/music/exploration-and-puzzle-music-pack-343998?srsltid=AfmBOor4VxErSqrR-LslekOSki5NNlKknFRIu4Dl9FSEcZj4DE_r7lbw
 
+Sounds:
+
+15- bubble-pop sound: https://pixabay.com/sound-effects/bubble-pop-06-351337/
+
+16- close-door sound: https://pixabay.com/sound-effects/close-door-382723/ 
+
+17-Eating sound: https://pixabay.com/sound-effects/eat-323883/
+
