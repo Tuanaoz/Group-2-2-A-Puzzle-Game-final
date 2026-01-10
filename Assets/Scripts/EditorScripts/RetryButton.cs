@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+//Reload current scene
 public class RetryButton : MonoBehaviour
 {
     public void RetryLevel()

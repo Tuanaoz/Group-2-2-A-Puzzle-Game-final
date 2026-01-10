@@ -41,6 +41,7 @@ public class CharacterMovement : MonoBehaviour
         rb.MovePosition(rb.position + transform.forward * speed * Time.deltaTime);
     }
 
+// Starts and Pauses character movement
     public void StartMovement() {
         movement = true;
         if (rb != null) {
@@ -50,6 +51,7 @@ public class CharacterMovement : MonoBehaviour
         }
     }
 
+// Stops movement
     public void PauseMovement()
     {
         movement = false;
@@ -57,10 +59,11 @@ public class CharacterMovement : MonoBehaviour
             rb.velocity = Vector3.zero;
         }
     }
-
     public bool IsMoving() {
-        return movement;
+        return movement;       // Back to movement state
     }
+
+// Stop and restart at start position
     public void ResetPosition()
     {
         PauseMovement();

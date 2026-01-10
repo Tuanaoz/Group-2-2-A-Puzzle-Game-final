@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
-
 public class CharMoveManager : MonoBehaviour
 {
     public Button buttonStart;
@@ -18,6 +17,7 @@ public class CharMoveManager : MonoBehaviour
         buttonPause.gameObject.SetActive(false);
     }
 
+// Checks if the object is character, gets movement script and adds  character to list
     private void GetAllCharacters() {
         foreach (Transform child in placementContainer) {
             if (!child.name.Contains("Character")) {
@@ -50,14 +50,17 @@ public class CharMoveManager : MonoBehaviour
         buttonPause.gameObject.SetActive(false);
     }
 
+// Clears the character list
     public void clearCharacters() {
         gotCharacters = false;
         characterMovements.Clear();
     }
+    
+// Resets all character positions and buttons UI also hides fail panel
     public void ResetLevel()
     {
         FailPanel.SetActive(false);
-        foreach (CharacterMovement cm in characterMovements) 
+        foreach (CharacterMovement cm in characterMovements)
         {
             cm.ResetPosition();
         }

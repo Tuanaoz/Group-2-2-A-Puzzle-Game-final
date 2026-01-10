@@ -8,6 +8,7 @@ public class PrefabOptionsMenu : MonoBehaviour
     private GameObject targetPrefab;
 
     // Start is called before the first frame update
+    // Menu is hidden at the start and openes or closes when clicked
     void Start()
     {
         targetPrefab = null;
@@ -24,12 +25,13 @@ public class PrefabOptionsMenu : MonoBehaviour
         targetPrefab = null;
         gameObject.SetActive(false);
     }
-
+// If delete clicked deletes the prefab
     public void DeletePrefab() {
         Destroy(targetPrefab);
         CloseMenu();
     }
 
+// If rotation is clicked rotates the prefab
     public void RotatePrefab()
     {
         if (targetPrefab == null)

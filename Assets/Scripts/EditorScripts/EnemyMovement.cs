@@ -21,6 +21,7 @@ public class EnemyMovement : MonoBehaviour
     {
         transform.Translate(ChangeDirection * EnemySpeed * Time.deltaTime, Space.World);
     }
+    // Changes direction when hits something, switches axis and moves forward
     void OnCollisionEnter(Collision col)
     {
         ChangeDirection = -ChangeDirection;

@@ -9,6 +9,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 [Serializable]
+// Data for Character
 public class CharacterData {
     public Vector3 position;
     public Quaternion rotation;
@@ -22,6 +23,7 @@ public class CharacterData {
 }
 
 [Serializable]
+// Data for placed objects
 public class PlacedObjectData {
     public string prefabName;
     public Vector3 position;
@@ -36,10 +38,12 @@ public class PlacedObjectData {
 
 
 [Serializable]
+// full level save data
 public class LevelData {
     public string levelName;
     public List<PlacedObjectData> placedObjects = new List<PlacedObjectData>();
     public List<CharacterData> characters = new List<CharacterData>();
+    // Ground and camera data
     public Vector3 grounPosition;
     public Vector3 groundScale;
     public int groundThemeIndex;
@@ -84,6 +88,7 @@ public class SaveLoadManager : MonoBehaviour
     private string levelFolder;
     private string loadedLevelName = null;
 
+// Checks seen and load level if needed
     void Start()
     {
         Scene currentScene = SceneManager.GetActiveScene();
@@ -124,6 +129,7 @@ public class SaveLoadManager : MonoBehaviour
         }
     }
 
+// Fill custom level list
     public void PopulateCustomLevelPanel() {
         string customLevelFolder = Application.persistentDataPath + "/Custom/";
 
@@ -149,12 +155,14 @@ public class SaveLoadManager : MonoBehaviour
         }
     }
 
+// Playes selected custom level
     public void PlayCustomLevel(string levelName) {
         LevelLoadRequest.RequestedLevelName = levelName;
         LevelLoadRequest.IsCustomLevel = true;
         SceneManager.LoadScene("PlayLevel");
     }
 
+// Checks if the level name already exists
     public void LevelAlreadyExists() {
         levelFolder = Application.persistentDataPath + "/CreatedLevels/";
         if (!Directory.Exists(levelFolder)) {
@@ -169,10 +177,13 @@ public class SaveLoadManager : MonoBehaviour
         }
     }
 
+// Save current level
     public void SaveLevel() {
         charCount = 0;
         LevelData levelData = new LevelData();
         levelData.levelName = saveFileName;
+
+// Saves ground and camera informarion
 
         levelData.grounPosition = gridManager.getGroundPosition();
         levelData.groundScale = gridManager.getGroundScale();
@@ -187,6 +198,7 @@ public class SaveLoadManager : MonoBehaviour
         levelData.cameraMinBoundZ = mainCameraMovement.GetMinBoundZ();
         levelData.cameraMaxBoundZ = mainCameraMovement.GetMaxBoundZ();
 
+// Saves all placed objects
         foreach (Transform child in placementContainer) {
 
             String prefabName = child.gameObject.name.Replace("(Clone)", "").Trim();
@@ -210,6 +222,7 @@ public class SaveLoadManager : MonoBehaviour
             levelData.placedObjects.Add(objData);
         }
 
+// Writes JSON file
         string json = JsonUtility.ToJson(levelData, true);
         File.WriteAllText(levelFolder + saveFileName + ".json", json);
 
@@ -223,11 +236,13 @@ public class SaveLoadManager : MonoBehaviour
         }
     }
 
+// Loads level from file
     public void LoadLevel(string levelName) {
 
+// Stops if share is active
         if (share)
             return;
-
+            
         loadedLevelName = levelName;
         saveFileName = levelName;
         levelNameInput.text = levelName;
@@ -239,6 +254,7 @@ public class SaveLoadManager : MonoBehaviour
         LoadLevelFromData(levelData);
     }
 
+// load built-in level from Resources folder
     public void LoadLevelFromResources(string levelName) {
         TextAsset levelFile = Resources.Load<TextAsset>("Levels/" + levelName);
         if (levelFile == null) return;
@@ -247,6 +263,7 @@ public class SaveLoadManager : MonoBehaviour
         LoadLevelFromData(levelData);
     }
 
+// Load custom shared level
     public void LoadCustomLevel(string levelName) {
         string levelFilePath = Application.persistentDataPath + "/Custom/" + levelName + ".json";
         if (!File.Exists(levelFilePath)) {
@@ -256,14 +273,15 @@ public class SaveLoadManager : MonoBehaviour
 
         string json = File.ReadAllText(levelFilePath);
         LevelData levelData = JsonUtility.FromJson<LevelData>(json);
-        LoadLevelFromData(levelData); 
+        LoadLevelFromData(levelData);
     }
-
+// Applies loaded level data to scene
     private void LoadLevelFromData(LevelData levelData) {
         foreach (Transform child in placementContainer) {
             Destroy(child.gameObject);
         }
 
+// Sets arrows only in editor
         if (SceneManager.GetActiveScene().name == "LevelEditor") {
             gridManager.setArrowPositions(
                 levelData.northArrowsPosition,
@@ -272,7 +290,7 @@ public class SaveLoadManager : MonoBehaviour
                 levelData.westArrowsPosition
             );
         }
-
+// Set up ground and camera bounds
         GameObject ground = GameObject.Find("Ground");
         ground.transform.position = levelData.grounPosition;
         ground.transform.localScale = levelData.groundScale;
@@ -284,6 +302,7 @@ public class SaveLoadManager : MonoBehaviour
             levelData.cameraMaxBoundZ
         );
 
+// Apply ground theme, spawns characters and other objects
 
         GroundTheme themeController=FindFirstObjectByType<GroundTheme>();
             if (themeController != null)
@@ -309,6 +328,7 @@ public class SaveLoadManager : MonoBehaviour
         HideLevelSelectionUI();
     }
 
+// Hide level selection panel
     public void HideLevelSelectionUI() {
         levelSelectionUI.gameObject.SetActive(false);
         if (gridManager!=null && SceneManager.GetActiveScene().name == "LevelEditor"){
@@ -341,10 +361,12 @@ public class SaveLoadManager : MonoBehaviour
         gridManager.UIToggle();
     }
 
+// Toggles share mode on and off
     public void ToggleShareMode() {
         share = !share;
     }
 
+// Copies level JSON to clipboard
     public void CopyLevelToClipboard(string levelName)
     {
 
@@ -365,6 +387,7 @@ public class SaveLoadManager : MonoBehaviour
         Share_Button.gameObject.SetActive(true);
     }
 
+// Saves shared level to custom folder
     private void SaveCustomLevel(LevelData levelData) {
         string folderPath = Application.persistentDataPath + "/Custom/";
 
@@ -397,6 +420,7 @@ public class SaveLoadManager : MonoBehaviour
             return;
         }
 
+// Loads level data from JSON
         LevelData levelData;
         try {
             levelData = JsonUtility.FromJson<LevelData>(json);

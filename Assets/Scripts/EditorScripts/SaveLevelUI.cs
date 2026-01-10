@@ -15,7 +15,6 @@ public class SaveLevelUI : MonoBehaviour
 
     public void OpenSaveUI()
     {
-        Debug.Log("Attempting to open Save UI");
         if (gridManager.isUIOpen())
             return;
         if (gridManager.saveLoadManager != null &&

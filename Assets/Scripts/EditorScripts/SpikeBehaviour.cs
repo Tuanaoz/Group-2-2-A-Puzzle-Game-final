@@ -9,6 +9,7 @@ public class SpikeBehaviour : MonoBehaviour
     private float timer = 0f;
     public float timerThreshold = 3f;
 
+// Switch and return spike state
     public void Toggle() {
         isOn = !isOn;
     }
@@ -17,9 +18,9 @@ public class SpikeBehaviour : MonoBehaviour
         return isOn;
     }
 
+// Changes spike state after counting time
     void Update() {
         timer += Time.deltaTime;
-
         if (timer >= timerThreshold) {
             Toggle();
             timer = 0f;

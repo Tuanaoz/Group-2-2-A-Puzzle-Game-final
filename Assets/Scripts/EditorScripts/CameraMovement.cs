@@ -75,6 +75,7 @@ public class CameraMovement : MonoBehaviour
         }
     }
 
+// Zoom setting in the game
     void Zoom() {
 
         if (IsPointerOverUIObject()) {
@@ -98,6 +99,7 @@ public class CameraMovement : MonoBehaviour
 
     }
 
+// Rotation setting in the game
     void Rotation() {
         if (Input.GetMouseButton(2)) {
             float mouseX = Input.GetAxis("Mouse X");
@@ -108,11 +110,11 @@ public class CameraMovement : MonoBehaviour
         }
     }
 
-    public void StopMovement() {
+    public void StopMovement() { // Stops camera movement
         movement = false;
     }
 
-    public void StartMovement() {
+    public void StartMovement() { // Starts camera movement
         movement = true;
     }
 
@@ -136,6 +138,7 @@ public class CameraMovement : MonoBehaviour
         }
     }
 
+// Changes camera speed and rotation based on the UI
     public void setCameraSpeed() {
         float newSpeed = CameraSpeed.speed;
         if (cameraSpeedInput.text != CameraSpeed.speed.ToString()) {
@@ -167,6 +170,7 @@ public class CameraMovement : MonoBehaviour
         cameraRotationSpeedSlider.value = newRotationSpeed;
     }
 
+// Checks if mouse is on UI element
     private bool IsPointerOverUIObject() {
         PointerEventData eventDataCurrentPosition = new PointerEventData(EventSystem.current);
         eventDataCurrentPosition.position = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
@@ -191,6 +195,7 @@ public class CameraMovement : MonoBehaviour
         return maxBoundZ;
     }
 
+// New camera bounds
     public void setBounds(float minX, float maxX, float minZ, float maxZ) {
         minBoundX = minX;
         maxBoundX = maxX;

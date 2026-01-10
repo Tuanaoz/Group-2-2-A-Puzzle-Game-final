@@ -70,6 +70,7 @@ public class GridManager : MonoBehaviour
         }
     }
 
+// Saves ground and arrow possition in the editor
     void Start()
     {
         if (SceneManager.GetActiveScene().name == "LevelEditor") {
@@ -83,6 +84,7 @@ public class GridManager : MonoBehaviour
         }
     }
 
+// Handles switch to door connection, prefab placement and selection
     void Update()
     {
         if (connectingSwitchToDoor) {
@@ -233,6 +235,7 @@ public class GridManager : MonoBehaviour
         }
     }
 
+// sets prefab placement mode
     public void setPrefabPlacement(Object prefab) {
         GameObject obj = (GameObject)prefab;
         prefabToPlace = obj;
@@ -251,6 +254,7 @@ public class GridManager : MonoBehaviour
         prefabUI = false;
     }
 
+// Creats preview object
     void CreateGhostObject() {
         if (ghostObject != null) {
             Destroy(ghostObject);
@@ -286,6 +290,7 @@ public class GridManager : MonoBehaviour
         }
     }
 
+// Updates colour of ghost
     void updateGhostColor(Color color) {
         Renderer[] renderers = ghostObject.GetComponentsInChildren<Renderer>();
         foreach (Renderer render in renderers) {
@@ -294,6 +299,7 @@ public class GridManager : MonoBehaviour
         }
     }
 
+// Highlights prefab
     void updatePrefabColor(GameObject obj, Color color) {
         Renderer[] renderers = obj.GetComponentsInChildren<Renderer>();
         foreach (Renderer render in renderers) {
@@ -318,6 +324,7 @@ public class GridManager : MonoBehaviour
         characterStartRotations.Add(rotation);
     }
 
+// Marks levels as complete
     public void setLevelComplete(bool complete) {
         levelComplete = complete;
         if (saveLevelUI == null)
@@ -332,6 +339,7 @@ public class GridManager : MonoBehaviour
         }
     }
 
+// Respaws Player when called
     public void RespawnPlayer() {
         int charIndex = 0;
 
@@ -351,6 +359,7 @@ public class GridManager : MonoBehaviour
         charMoveManager.PauseCharMovement();
     }
 
+// Scene changes
     public void BackToMainMenu() {
         LevelLoadRequest.RequestedLevelName = null;
         LevelLoadRequest.IsCustomLevel = false;
@@ -426,6 +435,7 @@ public class GridManager : MonoBehaviour
         groundScale = transform.localScale;
     }
 
+// registers when goal reached
     public void RegisterGoalReached(string tag)
     {
         if (tag == "character")
@@ -569,7 +579,8 @@ public class GridManager : MonoBehaviour
     public bool isUIOpen() {
         return UI;
     }
-    
+
+// Check point trigger
     public void TriggerCheckpoint(Vector3 position) {
         checkpointPosition = position;
         checkpointRotation = Quaternion.identity;

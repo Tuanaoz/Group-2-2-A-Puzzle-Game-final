@@ -13,14 +13,14 @@ public class LevelNode : MonoBehaviour
     void Start()
     {
         bool unlocked;
-        bool isTutorial = levelIndex < 3;
+        bool isTutorial = levelIndex < 3; // Checks for tutorial level
 
-
+// Sets Tutorials to unlocked so tutorials can be accessed all the time
         if (isTutorial)
         {
             unlocked = true;
         }
-        else
+        else // Checks progress for normal levels, hides or show icons
         {
             unlocked = levelIndex <= ProgressManager.HighestUnlockedLevel;
 
@@ -29,20 +29,26 @@ public class LevelNode : MonoBehaviour
             if (UnlockedIcon != null)
                 UnlockedIcon.SetActive(unlocked);
         }
+        // Sets button state and click
         
         levelButton.interactable = unlocked;
         levelButton.onClick.AddListener(OnClick);
     }
 
+// If locked do not do anything
     void OnClick()
     {
         if (!levelButton.interactable)
             return;
 
+        // Save current Level Index
+
         PlayerPrefs.SetInt("CurrentLevelID", levelIndex);
         PlayerPrefs.Save();
 
         string levelName;
+
+// Index to file name relation and load play scene
 
         if (levelIndex == 0)
             levelName = "Tutorial - 1";
