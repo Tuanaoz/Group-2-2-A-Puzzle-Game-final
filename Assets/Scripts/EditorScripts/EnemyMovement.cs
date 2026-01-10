@@ -15,6 +15,7 @@ public class EnemyMovement : MonoBehaviour
     {
         ChangeDirection = transform.forward.normalized;
         startDirection = ChangeDirection;
+        // Increase speed if hard difficulty is selected
         if (DifficultyBehaviour.hardDifficulty)
         {
             EnemySpeed *= 1.5f;

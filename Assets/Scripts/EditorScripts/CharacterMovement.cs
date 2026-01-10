@@ -54,6 +54,7 @@ public class CharacterMovement : MonoBehaviour
 // Stops movement
     public void PauseMovement()
     {
+        // If hard difficulty, do not pause movement
         if (DifficultyBehaviour.hardDifficulty)
         {
             return;

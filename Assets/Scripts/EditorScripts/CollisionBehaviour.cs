@@ -56,6 +56,7 @@ public class CollisionBehaviour : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Rotatable"))
         {
+            // if in level editor, respawn instead of game over
             if (isLevelEditor) { gridManager.RespawnPlayer(); return; }
             
             Debug.Log("Game Over");
@@ -68,6 +69,7 @@ public class CollisionBehaviour : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Goal"))
         {
+            // if in level editor, respawn instead of level complete
             if (isLevelEditor) { gridManager.RespawnPlayer(); return; }
             levelCompleteUI.ShowLevelComplete();
         }
@@ -75,10 +77,12 @@ public class CollisionBehaviour : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
+        // Determine if the character hit the center of the trigger
         Vector3 characterHitPoint = transform.position;
         Vector3 triggerHitPoint = other.transform.InverseTransformPoint(characterHitPoint);
         bool hitCenter = Mathf.Abs(triggerHitPoint.x) < 0.1f && Mathf.Abs(triggerHitPoint.z) < 0.1f;
 
+        // Tile Interactions
         if (other.gameObject.CompareTag("SpeedTile"))
         {
             if (hitCenter) transform.forward = other.transform.forward;

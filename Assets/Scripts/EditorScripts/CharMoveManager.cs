@@ -30,6 +30,7 @@ public class CharMoveManager : MonoBehaviour
         }
     }
 
+// Starts movement for all characters and updates buttons UI
     public void StartCharMovement() {
         if (!gotCharacters) {
             GetAllCharacters();
@@ -42,6 +43,7 @@ public class CharMoveManager : MonoBehaviour
         buttonPause.gameObject.SetActive(true);
     }
 
+// Pauses movement for all characters and updates buttons UI
     public void PauseCharMovement() {
         foreach (CharacterMovement cm in characterMovements) {
             cm.PauseMovement();

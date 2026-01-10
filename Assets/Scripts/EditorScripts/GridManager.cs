@@ -103,6 +103,7 @@ public class GridManager : MonoBehaviour
                 }
             }
         } else if (placement) {
+            // if UI is open, cancel placement
             if (UI) {
                 placement = false;
                 prefabToPlace = null;
@@ -115,16 +116,19 @@ public class GridManager : MonoBehaviour
             Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 
+            // Rotate ghost object on R key press
             if (Input.GetKeyDown(KeyCode.R)) {
                 ghostObject.transform.Rotate(0, 90, 0);
             }
 
             if (Physics.Raycast(ray, out hit, Mathf.Infinity)) {
+                // Red if not over ground, green if valid placement
                 if (hit.collider.gameObject.tag != "Ground") {
                     updateGhostColor(Color.red);
                 } else {
                     updateGhostColor(Color.green);
                 }
+                // Snap to grid
                 Vector3 worldPos = hit.point;
                 Vector3Int gridPos = WorldToGrid(worldPos);
                 Vector3 snappedWorldPos = GridToWorld(gridPos);
@@ -151,6 +155,7 @@ public class GridManager : MonoBehaviour
                     }
                     snappedWorldPos.y = offsetY; // Adjust for object height
                     if (prefabToPlace.tag == "Player") {
+                        // Record character start position and rotation
                         characterStartPositions.Add(snappedWorldPos);
                         characterStartRotations.Add(ghostObject.transform.rotation);
                         playerStartPosition = snappedWorldPos;
@@ -159,7 +164,7 @@ public class GridManager : MonoBehaviour
                     setLevelComplete(false);
                     Instantiate(prefabToPlace, snappedWorldPos, ghostObject.transform.rotation, placementContainer);
                 }
-
+            // Right click to cancel placement
             } else if (Input.GetMouseButtonDown(1)) {
                 placement = false;
                 prefabToPlace = null;
@@ -175,6 +180,7 @@ public class GridManager : MonoBehaviour
 
                 if (Physics.Raycast(ray, out hit)) {
                     Scene currentScene = SceneManager.GetActiveScene();
+                    // Select prefab and open options menu
                     if (hit.collider.gameObject.tag == "Direction" || ((hit.collider.gameObject.tag == "Player" || hit.collider.gameObject.tag == "Spikes" || hit.collider.gameObject.tag == "Enemy" || hit.collider.gameObject.tag == "Rotatable" || hit.collider.gameObject.tag == "Goal" || hit.collider.gameObject.tag == "character2" || hit.collider.CompareTag("Environment") || hit.collider.CompareTag("Interactive") || hit.collider.CompareTag("Switch")) && currentScene.name == "LevelEditor")) {
                         prefabUI = true;
                         currentPrefab = hit.collider.gameObject;
@@ -192,6 +198,7 @@ public class GridManager : MonoBehaviour
                             updatePrefabColor(currentPrefab, Color.blue);
                         }
                         prefabOptionsMenu.OpenMenu(hit.collider.gameObject);
+                    // Expand/Contract ground
                     } else if (hit.collider.gameObject.tag == "Expand") {
                         GameObject parentObject = hit.collider.gameObject.transform.parent.gameObject;
                         if (parentObject.name.Contains("North")) {
@@ -219,6 +226,7 @@ public class GridManager : MonoBehaviour
                 }
             }
         } else if (prefabUI) {
+            // Close prefab options on right click or left click outside UI
             if (Input.GetMouseButtonDown(1) || (Input.GetMouseButtonDown(0) && !IsPointerOverUIObject())) {
                 prefabUI = false;
                 if (currentPrefab.GetComponent<Renderer>() == null) {
@@ -521,6 +529,7 @@ public class GridManager : MonoBehaviour
         westArrowsPosition = westArrows.transform.position;
     }
 
+    // Checks if pointer is over UI element
     private bool IsPointerOverUIObject() {
         PointerEventData eventDataCurrentPosition = new PointerEventData(EventSystem.current);
         eventDataCurrentPosition.position = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
@@ -553,6 +562,7 @@ public class GridManager : MonoBehaviour
         return westArrowsPosition;
     }
 
+    // Sets arrow positions and updates their transforms
     public void setArrowPositions(Vector3 northPos, Vector3 southPos, Vector3 eastPos, Vector3 westPos) {
         GameObject northArrows = GameObject.Find("Arrows_North");
         GameObject southArrows = GameObject.Find("Arrows_South");

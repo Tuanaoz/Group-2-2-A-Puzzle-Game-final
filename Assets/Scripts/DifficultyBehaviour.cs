@@ -7,6 +7,7 @@ public static class DifficultyBehaviour
 {
     public static bool hardDifficulty = false;
 
+    // Toggle difficulty setting
     public static void ToggleDifficulty()
     {
         hardDifficulty = !hardDifficulty;
