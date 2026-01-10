@@ -21,6 +21,8 @@ TagManager:
   - Switch
   - SpeedTile
   - Food
+  - FxTemporaire
+  - Score
   layers:
   - Default
   - TransparentFX

@@ -12,10 +12,12 @@ using UnityEngine.SceneManagement;
 public class CharacterData {
     public Vector3 position;
     public Quaternion rotation;
+    public string prefabName;
 
-    public CharacterData(Vector3 pos, Quaternion rot) {
+    public CharacterData(Vector3 pos, Quaternion rot, String name) {
         position = pos;
         rotation = rot;
+        prefabName = name;
     }
 }
 
@@ -192,7 +194,8 @@ public class SaveLoadManager : MonoBehaviour
             if (prefabName.Contains("Character")) {
                 CharacterData charData = new CharacterData(
                     gridManager.getPlayerSpawnPosition(charCount),
-                    gridManager.getPlayerSpawnRotation(charCount)
+                    gridManager.getPlayerSpawnRotation(charCount),
+                    prefabName
                 );
                 levelData.characters.Add(charData);
                 charCount++;
@@ -289,7 +292,7 @@ public class SaveLoadManager : MonoBehaviour
             }
 
         foreach (CharacterData charData in levelData.characters) {
-            GameObject prefab = Array.Find(placeablePrefabs, p => p.name.Contains("Character"));
+            GameObject prefab = Array.Find(placeablePrefabs, p => p.name == charData.prefabName);
             if (prefab != null) {
                 Instantiate(prefab, charData.position, charData.rotation, placementContainer);
                 gridManager.addCharacterStartPosition(charData.position);

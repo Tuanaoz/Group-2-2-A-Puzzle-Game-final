@@ -10,11 +10,12 @@ public class SaveLevelUI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gameObject.SetActive(false);
+        this.gameObject.SetActive(false);
     }
 
     public void OpenSaveUI()
     {
+        Debug.Log("Attempting to open Save UI");
         if (gridManager.isUIOpen())
             return;
         if (gridManager.saveLoadManager != null &&
@@ -23,7 +24,7 @@ public class SaveLevelUI : MonoBehaviour
             gridManager.saveLoadManager.OpenOverwriteFromEdit();
             return;
         }
-        gameObject.SetActive(true);
+        this.gameObject.SetActive(true);
         gridManager.UIToggle();
     }
 
